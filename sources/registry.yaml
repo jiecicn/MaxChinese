@@ -1,0 +1,133 @@
+sources:
+  # === Classic Prose ===
+  - id: "src-001"
+    title_zh: "朱自清散文集"
+    title_en: "Selected Essays of Zhu Ziqing"
+    author: "朱自清"
+    publisher: "人民文学出版社"
+    type: original
+    notes: "Classic prose master. 《春》《背影》《荷塘月色》 are staples of Chinese education."
+
+  - id: "src-002"
+    title_zh: "老舍散文集"
+    title_en: "Selected Essays of Lao She"
+    author: "老舍"
+    publisher: "人民文学出版社"
+    type: original
+    notes: "Warm, humorous Beijing-flavored prose. 《猫》《养花》 are child-friendly."
+
+  - id: "src-003"
+    title_zh: "冰心散文集"
+    title_en: "Selected Essays of Bing Xin"
+    author: "冰心"
+    publisher: "人民文学出版社"
+    type: original
+    notes: "Gentle, motherly writing style. 《寄小读者》 written specifically for children."
+
+  - id: "src-004"
+    title_zh: "丰子恺散文集"
+    title_en: "Selected Essays of Feng Zikai"
+    author: "丰子恺"
+    publisher: "人民文学出版社"
+    type: original
+    notes: "Artist-writer. Simple, vivid prose about everyday life. Child-friendly perspective."
+
+  - id: "src-005"
+    title_zh: "汪曾祺散文集"
+    title_en: "Selected Essays of Wang Zengqi"
+    author: "汪曾祺"
+    publisher: "人民文学出版社"
+    type: original
+    notes: "Beautiful food and nature writing. Simple language, rich imagery."
+
+  # === Modern Children's Literature ===
+  - id: "src-006"
+    title_zh: "草房子"
+    title_en: "Bronze and Sunflower"
+    author: "曹文轩"
+    publisher: "江苏少年儿童出版社"
+    type: original
+    notes: "Award-winning children's literature. Lyrical prose about rural childhood."
+
+  - id: "src-007"
+    title_zh: "林清玄散文集"
+    title_en: "Selected Essays of Lin Qingxuan"
+    author: "林清玄"
+    publisher: "作家出版社"
+    type: original
+    notes: "Contemplative nature writing. Clear, accessible language."
+
+  - id: "src-008"
+    title_zh: "金波儿童诗选"
+    title_en: "Selected Children's Poems of Jin Bo"
+    author: "金波"
+    publisher: "中国少年儿童出版社"
+    type: original
+    notes: "Leading children's poet. Musical, playful language."
+
+  # === Poetry ===
+  - id: "src-009"
+    title_zh: "小学生必背古诗词75首"
+    title_en: "75 Classical Poems for Primary School Students"
+    author: "various"
+    publisher: "人民教育出版社"
+    type: original
+    notes: "Standard curriculum poetry collection. Age-appropriate classical Chinese."
+
+  # === Translated Classics ===
+  - id: "src-010"
+    title_zh: "小王子"
+    title_en: "The Little Prince"
+    author: "Antoine de Saint-Exupery"
+    translator_zh: "周克希"
+    publisher_zh: "上海译文出版社"
+    publisher_en: "Mariner Books (Katherine Woods translation)"
+    type: translated
+    notes: "周克希 translation is highly regarded. Woods English translation is the classic."
+
+  - id: "src-011"
+    title_zh: "夏洛的网"
+    title_en: "Charlotte's Web"
+    author: "E.B. White"
+    translator_zh: "任溶溶"
+    publisher_zh: "上海译文出版社"
+    publisher_en: "Harper & Brothers (original 1952 edition)"
+    type: translated
+    notes: "任溶溶 is a master children's translator. Original English is the definitive version."
+
+  - id: "src-012"
+    title_zh: "安徒生童话"
+    title_en: "Andersen's Fairy Tales"
+    author: "Hans Christian Andersen"
+    translator_zh: "叶君健"
+    publisher_zh: "人民文学出版社"
+    publisher_en: "various (Jean Hersholt translation is the standard English reference)"
+    type: translated
+    notes: "叶君健 translated directly from Danish, considered the most authoritative Chinese edition."
+
+  - id: "src-013"
+    title_zh: "金子美铃童谣集"
+    title_en: "Selected Poems of Kaneko Misuzu"
+    author: "金子美铃"
+    translator_zh: "吴菲"
+    publisher_zh: "接力出版社"
+    publisher_en: "various (David Jacobson translations)"
+    type: translated
+    notes: "Gentle, philosophical children's poetry. 吴菲 translation well-received in China."
+
+  # === Essay Collections ===
+  - id: "src-014"
+    title_zh: "读者精选"
+    title_en: "Reader's Digest Selected Essays (Chinese)"
+    author: "various"
+    publisher: "读者出版传媒"
+    type: original
+    notes: "Curated short essays. Quality varies — select carefully."
+
+  - id: "src-015"
+    title_zh: "意林少年版精选"
+    title_en: "Yilin Youth Edition Selected"
+    author: "various"
+    publisher: "意林杂志社"
+    type: original
+    notes: "Short inspirational stories and essays aimed at young readers."
