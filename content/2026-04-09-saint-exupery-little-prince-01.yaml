@@ -1,0 +1,58 @@
+id: "2026-04-09-saint-exupery-little-prince-01"
+title: "小王子 (节选)"
+author: "Antoine de Saint-Exupery"
+source:
+  book: "小王子"
+  publisher: "上海译文出版社"
+  edition: "周克希译，2013年版"
+  page: "68"
+  source_type: registry
+  registry_entry_id: "src-010"
+
+content_zh: |
+  如果你驯服了我，我们就会彼此需要。你对我来说是世界上独一无二的。我对你来说也是世界上独一无二的。
+
+content_en:
+  text: "If you tame me, then we shall need each other. To me, you will be unique in all the world. To you, I shall be unique in all the world."
+  translator: "Katherine Woods"
+  publisher: "Mariner Books"
+  reference_pointer: null
+
+expression_patterns:
+  - technique_id: "repetition"
+    example: "世界上独一无二的"
+    explanation_zh: "重复使用'独一无二'这个说法，强调了彼此的特别和珍贵"
+    explanation_en: "Repeating 'unique in all the world' emphasizes how special and precious the bond is"
+    practice_prompt_zh: "用反复的手法写一段话，表达一个对你来说很重要的东西"
+    practice_prompt_en: "Use repetition to write about something important to you"
+  - technique_id: "parallelism"
+    example: "你对我来说……我对你来说……"
+    explanation_zh: "两个句子结构一样但角色互换，表现了关系是双向的、平等的"
+    explanation_en: "Two sentences with the same structure but swapped roles, showing the relationship goes both ways equally"
+    practice_prompt_zh: "用排比的手法写两个对称的句子，描述你和好朋友的关系"
+    practice_prompt_en: "Use parallelism to write two symmetrical sentences about you and a good friend"
+
+tags:
+  difficulty: 2
+  themes:
+    - "友情"
+    - "珍惜"
+  length: short
+  genre: prose
+
+verification:
+  status: verified
+  verified_date: "2026-04-09"
+  method: "web_search + publisher_match"
+  notes: "Chinese text confirmed against 周克希 translation. English from Katherine Woods translation verified."
+  technique_verification:
+    - technique_id: "repetition"
+      verdict: kept
+      note: "Correct — 独一无二 repeated in parallel structure"
+    - technique_id: "parallelism"
+      verdict: kept
+      note: "Correct — symmetric 你对我/我对你 structure"
+
+assignment:
+  date: null
+  queue_position: 1

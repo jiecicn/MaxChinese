@@ -1,0 +1,58 @@
+id: "2026-04-09-zhu-ziqing-spring-01"
+title: "春 (节选)"
+author: "朱自清"
+source:
+  book: "朱自清散文集"
+  publisher: "人民文学出版社"
+  edition: "2005年版"
+  page: "12"
+  source_type: registry
+  registry_entry_id: "src-001"
+
+content_zh: |
+  小草偷偷地从土里钻出来，嫩嫩的，绿绿的。园子里，田野里，瞧去，一大片一大片满是的。坐着，躺着，打两个滚，踢几脚球，赛几趟跑，捉几回迷藏。风轻悄悄的，草软绵绵的。
+
+content_en:
+  text: null
+  translator: null
+  publisher: null
+  reference_pointer: "See 'Selected Essays of Zhu Ziqing', Panda Books edition, Chapter 2"
+
+expression_patterns:
+  - technique_id: "personification"
+    example: "小草偷偷地从土里钻出来"
+    explanation_zh: "把小草当作人来写，好像它会偷偷做事——让大自然变得活泼有趣"
+    explanation_en: "Giving grass human behavior (sneaking out) — makes nature feel alive and playful"
+    practice_prompt_zh: "用拟人的手法描述一种你喜欢的动物或植物"
+    practice_prompt_en: "Use personification to describe an animal or plant you like"
+  - technique_id: "reduplication"
+    example: "嫩嫩的，绿绿的"
+    explanation_zh: "把字重复一遍，感觉更柔和、更生动，比单独说'嫩'或'绿'好听"
+    explanation_en: "Repeating the character intensifies the feeling — softer and more vivid than just saying it once"
+    practice_prompt_zh: "用叠词描述你今天看到的一样东西"
+    practice_prompt_en: "Use reduplication to describe something you saw today"
+
+tags:
+  difficulty: 2
+  themes:
+    - "春天"
+    - "自然"
+  length: short
+  genre: prose
+
+verification:
+  status: verified
+  verified_date: "2026-04-09"
+  method: "web_search + source_match"
+  notes: "Exact text confirmed — classic passage from 朱自清《春》, widely anthologized"
+  technique_verification:
+    - technique_id: "personification"
+      verdict: kept
+      note: "Correct — 偷偷地 clearly personifies the grass"
+    - technique_id: "reduplication"
+      verdict: kept
+      note: "Correct — 嫩嫩的，绿绿的 is textbook reduplication"
+
+assignment:
+  date: "2026-04-10"
+  queue_position: null

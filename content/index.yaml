@@ -1,0 +1,11 @@
+entries:
+  - id: "2026-04-09-zhu-ziqing-spring-01"
+    author: "朱自清"
+    source: "朱自清散文集"
+    content_hash: "placeholder-will-be-computed-by-build"
+    first_line: "小草偷偷地从土里钻出来"
+  - id: "2026-04-09-saint-exupery-little-prince-01"
+    author: "Antoine de Saint-Exupery"
+    source: "小王子"
+    content_hash: "placeholder-will-be-computed-by-build"
+    first_line: "如果你驯服了我"
