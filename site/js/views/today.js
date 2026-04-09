@@ -15,6 +15,7 @@ export async function renderToday(container, data) {
 
   if (pieces.length === 0) {
     container.innerHTML = `
+      <div class="greeting">Welcome to Max Studio</div>
       <div class="today-date">${dateStr}</div>
       <div class="empty-state">
         No reading assigned for today.
@@ -25,6 +26,7 @@ export async function renderToday(container, data) {
 
   const lang = getCurrentLang();
   container.innerHTML = `
+    <div class="greeting">Welcome to Max Studio</div>
     <div class="today-date">${dateStr}</div>
     <div id="lang-toggle-container"></div>
     ${pieces.map(piece => renderPiece(piece, data.techniqueMap, lang)).join('')}

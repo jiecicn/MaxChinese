@@ -67,6 +67,14 @@ body {
 }
 
 /* === Today's Reading === */
+.greeting {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--green);
+  margin-bottom: 4px;
+}
+
 .today-date {
   text-align: center;
   font-size: 1.1rem;
