@@ -1,0 +1,41 @@
+id: "test-001"
+title: "测试标题"
+author: "测试作者"
+source:
+  book: "测试书"
+  publisher: "测试出版社"
+  edition: "2025"
+  page: "1"
+  source_type: registry
+  registry_entry_id: "src-001"
+content_zh: |
+  这是一段测试内容。
+content_en:
+  text: null
+  translator: null
+  publisher: null
+  reference_pointer: null
+expression_patterns:
+  - technique_id: "personification"
+    example: "测试例句"
+    explanation_zh: "中文解释"
+    explanation_en: "English explanation"
+    practice_prompt_zh: "中文提示"
+    practice_prompt_en: "English prompt"
+tags:
+  difficulty: 1
+  themes: ["测试"]
+  length: short
+  genre: prose
+verification:
+  status: verified
+  verified_date: "2025-01-01"
+  method: "test"
+  notes: "test fixture"
+  technique_verification:
+    - technique_id: "personification"
+      verdict: kept
+      note: "test"
+assignment:
+  date: "2025-01-02"
+  queue_position: null

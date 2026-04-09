@@ -1,11 +1,11 @@
 entries:
-  - id: "2026-04-09-zhu-ziqing-spring-01"
-    author: "朱自清"
-    source: "朱自清散文集"
-    content_hash: "placeholder-will-be-computed-by-build"
-    first_line: "小草偷偷地从土里钻出来"
-  - id: "2026-04-09-saint-exupery-little-prince-01"
-    author: "Antoine de Saint-Exupery"
-    source: "小王子"
-    content_hash: "placeholder-will-be-computed-by-build"
-    first_line: "如果你驯服了我"
+- author: Antoine de Saint-Exupery
+  content_hash: 7a333822ec0042e3a03a39e608ad335161e724113e4e13366ef8c1fc81d78ca7
+  first_line: 如果你驯服了我，我们就会彼此需要。你对我来说是世界上独一无二的。我对你来说也是世界上独一无二的。
+  id: 2026-04-09-saint-exupery-little-prince-01
+  source: 小王子
+- author: 朱自清
+  content_hash: b40f04cc156fd7dac8f5d65bd69f768c0a0754b0277da5d8de7878896b704d97
+  first_line: 小草偷偷地从土里钻出来，嫩嫩的，绿绿的。园子里，田野里，瞧去，一大片一大片满是的。坐着，躺着，打两个滚，踢几脚球，赛几趟跑，捉几回迷藏。风轻悄悄的，草软绵绵的。
+  id: 2026-04-09-zhu-ziqing-spring-01
+  source: 朱自清散文集

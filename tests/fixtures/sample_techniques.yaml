@@ -1,0 +1,11 @@
+techniques:
+  - id: "personification"
+    name_zh: "拟人"
+    name_en: "personification"
+    description_zh: "把事物当作人来描写"
+    description_en: "Describing things as if they were human"
+  - id: "reduplication"
+    name_zh: "叠词"
+    name_en: "reduplication"
+    description_zh: "把字重复使用"
+    description_en: "Repeating characters"
