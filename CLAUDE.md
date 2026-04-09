@@ -32,6 +32,7 @@ A content curation system for high-quality Chinese reading material. An 8-year-o
   5. Spawn a verification subagent (see below) for each batch of candidates.
   6. Present verified results for user approval.
   7. Save approved content to `content/` and update `content/index.yaml`.
+  8. Auto-queue: read the highest `queue_position` from all existing content files, then assign the new piece `queue_position = max + 1`. Never require the user to specify queue position manually.
 
 ### Verification Subagent
 Always spawn a separate verification subagent before approving content. The subagent must:
