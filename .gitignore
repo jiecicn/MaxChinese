@@ -6,3 +6,4 @@ site/data/
 node_modules/
 .DS_Store
 Thumbs.db
+site/config.js

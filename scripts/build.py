@@ -69,6 +69,24 @@ def update_index(pieces):
     return entries
 
 
+def inject_config(project_root, output_dir):
+    """Inject Gist config + token into a JS config file for the PWA."""
+    config_path = os.path.join(project_root, 'progress', 'gist-config.yaml')
+    if not os.path.exists(config_path):
+        return
+
+    with open(config_path, 'r', encoding='utf-8') as f:
+        gist_config = yaml.safe_load(f) or {}
+
+    gist_id = gist_config.get('gist_id', '')
+    token = os.environ.get('MAXCHINESE_GIST_TOKEN', '')
+
+    config_js = f'window.MAXCHINESE_CONFIG = {json.dumps({"gist_id": gist_id, "token": token})};'
+    config_js_path = os.path.join(os.path.dirname(output_dir), 'config.js')
+    with open(config_js_path, 'w', encoding='utf-8') as f:
+        f.write(config_js)
+
+
 def main():
     """Main build: read YAML sources, write JSON to site/data/."""
     project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -100,6 +118,10 @@ def main():
     print(f"Built {len(content_json)} content pieces, {len(techniques_json)} techniques")
     print(f"Output: {output_dir}")
     print(f"Index updated: {index_path}")
+
+    # Inject Gist config
+    inject_config(project_root, output_dir)
+    print("Config injected: site/config.js")
 
 
 if __name__ == '__main__':
