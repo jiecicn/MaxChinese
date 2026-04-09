@@ -17,7 +17,22 @@ const PROGRESS_FILENAME = 'progress.json';
 let cachedProgress = null;
 
 function getConfig() {
-  return window.MAXCHINESE_CONFIG || { gist_id: '', token: '' };
+  // Gist ID from build-time config, token from localStorage (entered once by parent)
+  const buildConfig = window.MAXCHINESE_CONFIG || {};
+  return {
+    gist_id: buildConfig.gist_id || localStorage.getItem('maxchinese_gist_id') || '',
+    token: localStorage.getItem('maxchinese_gist_token') || '',
+  };
+}
+
+export function isConfigured() {
+  const config = getConfig();
+  return !!(config.gist_id && config.token);
+}
+
+export function saveSetup(gistId, token) {
+  localStorage.setItem('maxchinese_gist_id', gistId);
+  localStorage.setItem('maxchinese_gist_token', token);
 }
 
 function headers() {

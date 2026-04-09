@@ -79,9 +79,9 @@ def inject_config(project_root, output_dir):
         gist_config = yaml.safe_load(f) or {}
 
     gist_id = gist_config.get('gist_id', '')
-    token = os.environ.get('MAXCHINESE_GIST_TOKEN', '')
 
-    config_js = f'window.MAXCHINESE_CONFIG = {json.dumps({"gist_id": gist_id, "token": token})};'
+    # Only inject gist_id — token is stored in localStorage on device, never in code
+    config_js = f'window.MAXCHINESE_CONFIG = {json.dumps({"gist_id": gist_id})};'
     config_js_path = os.path.join(os.path.dirname(output_dir), 'config.js')
     with open(config_js_path, 'w', encoding='utf-8') as f:
         f.write(config_js)

@@ -1,4 +1,5 @@
 import { loadData } from './data.js';
+import { isConfigured, saveSetup } from './progress.js';
 import { renderToday } from './views/today.js';
 import { renderHistory } from './views/history.js';
 import { renderTechniques, renderTechniqueDetail } from './views/techniques.js';
@@ -42,14 +43,47 @@ async function render() {
     case 'technique':
       renderTechniqueDetail(main, appData, route.param);
       break;
+    case 'setup':
+      renderSetup(main);
+      break;
     default:
       renderToday(main, appData);
   }
 }
 
+function renderSetup(container) {
+  container.innerHTML = `
+    <div class="piece-card">
+      <div class="piece-title">Setup</div>
+      <div class="piece-author">Parent: enter Gist config for progress tracking</div>
+      <div style="margin-top:16px">
+        <label style="display:block;font-size:0.9rem;color:#666;margin-bottom:4px">Gist ID</label>
+        <input id="setup-gist-id" type="text" style="width:100%;padding:10px;border:1px solid #e5e2dd;border-radius:8px;font-size:1rem;margin-bottom:12px" placeholder="e.g. abc123def456">
+        <label style="display:block;font-size:0.9rem;color:#666;margin-bottom:4px">Token</label>
+        <input id="setup-token" type="password" style="width:100%;padding:10px;border:1px solid #e5e2dd;border-radius:8px;font-size:1rem;margin-bottom:16px" placeholder="github_pat_...">
+        <button id="setup-save" class="btn-finish" style="width:100%">Save</button>
+      </div>
+    </div>
+  `;
+  document.getElementById('setup-save').addEventListener('click', () => {
+    const gistId = document.getElementById('setup-gist-id').value.trim();
+    const token = document.getElementById('setup-token').value.trim();
+    if (gistId && token) {
+      saveSetup(gistId, token);
+      window.location.hash = 'today';
+    }
+  });
+}
+
 async function init() {
   appData = await loadData();
   window.addEventListener('hashchange', render);
+
+  // If Gist not configured, redirect to setup
+  if (!isConfigured()) {
+    window.location.hash = 'setup';
+  }
+
   render();
 }
 
