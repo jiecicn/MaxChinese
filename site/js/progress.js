@@ -118,6 +118,21 @@ export async function markFinished(pieceId) {
   return progress;
 }
 
+export async function markChanged(pieceId) {
+  let progress = await loadProgress();
+
+  // Remove any existing "changed" entry for this piece
+  progress.items = progress.items.filter(item => !(item.id === pieceId && item.status === 'changed'));
+  progress.items.push({
+    id: pieceId,
+    status: 'changed',
+    changed_date: new Date().toISOString().slice(0, 10),
+  });
+
+  await saveProgress(progress);
+  return progress;
+}
+
 export async function markSkipped(pieceId) {
   let progress = await loadProgress();
   progress = incrementUsageDay(progress);

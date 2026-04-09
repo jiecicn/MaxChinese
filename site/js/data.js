@@ -56,10 +56,19 @@ export function getTodayPieces(data, progress) {
 
   if (resurfaced.length > 0) return resurfaced.slice(0, 3);
 
-  // 3. Queue-ordered pieces (not skipped)
+  // 3. Queue-ordered pieces (not skipped, changed pieces go to end)
+  const changedIds = new Set(
+    progress.items.filter(p => p.status === 'changed').map(p => p.id)
+  );
   const queued = available
     .filter(p => p.assignment && p.assignment.queue_position != null && !skippedMap.has(p.id))
-    .sort((a, b) => a.assignment.queue_position - b.assignment.queue_position);
+    .sort((a, b) => {
+      // Changed pieces sort after non-changed ones
+      const aChanged = changedIds.has(a.id) ? 1 : 0;
+      const bChanged = changedIds.has(b.id) ? 1 : 0;
+      if (aChanged !== bChanged) return aChanged - bChanged;
+      return a.assignment.queue_position - b.assignment.queue_position;
+    });
 
   if (queued.length > 0) return queued.slice(0, 3);
 

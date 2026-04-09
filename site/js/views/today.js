@@ -1,5 +1,5 @@
 import { getTodayPieces } from '../data.js';
-import { loadProgress, markFinished, markSkipped } from '../progress.js';
+import { loadProgress, markFinished, markSkipped, markChanged } from '../progress.js';
 import { getCurrentLang, renderLanguageToggle } from '../components/language-toggle.js';
 
 export async function renderToday(container, data) {
@@ -66,6 +66,15 @@ export async function renderToday(container, data) {
       await markSkipped(id);
     });
   });
+
+  container.querySelectorAll('.btn-change').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const id = btn.dataset.pieceId;
+      await markChanged(id);
+      // Re-render to show the next piece
+      renderToday(container, data);
+    });
+  });
 }
 
 function renderPiece(piece, techniqueMap, lang) {
@@ -101,6 +110,7 @@ function renderPiece(piece, techniqueMap, lang) {
 
       <div class="action-buttons">
         <button class="btn-finish" data-piece-id="${piece.id}">Finish</button>
+        <button class="btn-change" data-piece-id="${piece.id}">Change</button>
         <button class="btn-skip" data-piece-id="${piece.id}">Skip</button>
       </div>
     </div>
