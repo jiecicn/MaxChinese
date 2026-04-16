@@ -1,0 +1,647 @@
+[
+  {
+    "id": "2026-04-09-bing-xin-xiaojudeng-01",
+    "title": "小桔灯 (节选)",
+    "author": "冰心",
+    "source": {
+      "book": "冰心散文集",
+      "publisher": "人民文学出版社",
+      "edition": "1978年版",
+      "page": null,
+      "source_type": "registry",
+      "registry_entry_id": "src-003"
+    },
+    "content_zh": "我提着这灵巧的小桔灯，慢慢地在黑暗潮湿的山路上走着。这朦胧的桔红的光，实在照不了多远，但这小姑娘的镇定、勇敢、乐观的精神鼓舞了我，我似乎觉得眼前有无限光明！",
+    "content_en": {
+      "text": null,
+      "translator": "Gong Shifen",
+      "publisher": "Renditions (Chinese University of Hong Kong)",
+      "reference_pointer": "See Renditions No. 32, Autumn 1989, pp. 130-132"
+    },
+    "expression_patterns": [
+      {
+        "technique_id": "emotion-through-object",
+        "example": "这灵巧的小桔灯...我似乎觉得眼前有无限光明",
+        "explanation_zh": "通过描写小桔灯来表达对小姑娘勇敢精神的感动，以小见大",
+        "explanation_en": "Using the small orange lamp to express admiration for the girl's courage — a small object reveals a big feeling",
+        "practice_prompt_zh": "选一样你身边的小东西，用它来表达一种感情",
+        "practice_prompt_en": "Pick a small object near you and use it to express a feeling"
+      },
+      {
+        "technique_id": "sensory-detail",
+        "example": "黑暗潮湿的山路...朦胧的桔红的光",
+        "explanation_zh": "用视觉和触觉的细节描写，让读者仿佛身临其境",
+        "explanation_en": "Using visual and tactile details — dark, damp path and hazy orange light — to put the reader in the scene",
+        "practice_prompt_zh": "描述一个你去过的地方，用至少两种感官来写",
+        "practice_prompt_en": "Describe a place you've been using at least two senses"
+      },
+      {
+        "technique_id": "contrast-transition",
+        "example": "实在照不了多远，但...眼前有无限光明",
+        "explanation_zh": "先说灯光照不远，再话锋一转，说感受到无限光明——小与大形成强烈反差",
+        "explanation_en": "First admitting the light doesn't reach far, then turning to say she felt infinite brightness — a powerful contrast between small and large",
+        "practice_prompt_zh": "用'虽然……但是……'写一个转折句，表达意想不到的感受",
+        "practice_prompt_en": "Write a turning-point sentence using 'although... but...' to express an unexpected feeling"
+      }
+    ],
+    "tags": {
+      "difficulty": 2,
+      "themes": [
+        "勇气",
+        "希望"
+      ],
+      "length": "short",
+      "genre": "prose"
+    },
+    "assignment": {
+      "date": null,
+      "queue_position": 2
+    }
+  },
+  {
+    "id": "2026-04-09-feng-zikai-baie-01",
+    "title": "白鹅 (节选)",
+    "author": "丰子恺",
+    "source": {
+      "book": "丰子恺散文集",
+      "publisher": "人民文学出版社",
+      "edition": "人教版四年级下册课文版本",
+      "page": null,
+      "source_type": "registry",
+      "registry_entry_id": "src-004"
+    },
+    "content_zh": "鹅的步态，更是傲慢了。大体上与鸭相似，但鸭的步调急速，有局促不安之相；鹅的步调从容，大模大样的，颇像京剧里的净角出场。",
+    "content_en": {
+      "text": null,
+      "translator": null,
+      "publisher": null,
+      "reference_pointer": "Check 'A Feng Zikai Reader' (English edition) or 'The Chinese Essay' (Columbia University Press, ed. David Pollard)"
+    },
+    "expression_patterns": [
+      {
+        "technique_id": "personification",
+        "example": "傲慢",
+        "explanation_zh": "用描写人的词语来形容鹅，好像鹅也有人的态度和脾气",
+        "explanation_en": "Using a human word ('arrogant') to describe the goose, as if it has a human personality",
+        "practice_prompt_zh": "用一个描写人的词来形容你见过的一种动物",
+        "practice_prompt_en": "Use a word that normally describes people to describe an animal you've seen"
+      },
+      {
+        "technique_id": "antithesis",
+        "example": "鸭的步调急速，有局促不安之相；鹅的步调从容，大模大样的",
+        "explanation_zh": "把鸭和鹅放在一起比较，一个急匆匆，一个慢悠悠，突出鹅的从容",
+        "explanation_en": "Comparing duck and goose side by side — one hurried, one stately — highlighting the goose's composure",
+        "practice_prompt_zh": "选两种动物，用对比的方法描写它们的不同",
+        "practice_prompt_en": "Pick two animals and use contrast to describe how they differ"
+      },
+      {
+        "technique_id": "simile",
+        "example": "颇像京剧里的净角出场",
+        "explanation_zh": "把鹅走路的样子比作京剧演员出场，画面感很强",
+        "explanation_en": "Comparing the goose's walk to a Beijing opera character entering the stage — creates a vivid image",
+        "practice_prompt_zh": "用'像……'来形容一种动物做某件事的样子",
+        "practice_prompt_en": "Use 'like...' to describe how an animal does something"
+      }
+    ],
+    "tags": {
+      "difficulty": 2,
+      "themes": [
+        "动物",
+        "幽默"
+      ],
+      "length": "short",
+      "genre": "prose"
+    },
+    "assignment": {
+      "date": null,
+      "queue_position": 3
+    }
+  },
+  {
+    "id": "2026-04-09-ji-xianlin-jiazhutao-01",
+    "title": "夹竹桃 (节选)",
+    "author": "季羡林",
+    "source": {
+      "book": "季羡林散文集",
+      "publisher": "人民文学出版社",
+      "edition": "2007年版",
+      "page": null,
+      "source_type": "registry",
+      "registry_entry_id": "src-023"
+    },
+    "content_zh": "但是夹竹桃的妙处还不止于此。我特别喜欢月光下的夹竹桃。你站在它下面，花朵是一团模糊；但是香气却毫不含糊，浓浓烈烈地从花枝上袭了下来。",
+    "content_en": {
+      "text": null,
+      "translator": null,
+      "publisher": null,
+      "reference_pointer": "Check Foreign Languages Press / Panda Books Chinese prose anthologies; Ji Xianlin in English: 'The Cowshed' (Chenxin Jiang, NYRB, 2016)"
+    },
+    "expression_patterns": [
+      {
+        "technique_id": "contrast-transition",
+        "example": "花朵是一团模糊；但是香气却毫不含糊",
+        "explanation_zh": "先说花看不清楚，再一转说香气却非常强烈——视觉模糊和嗅觉清晰形成反差",
+        "explanation_en": "First saying the flowers are blurred, then turning to say the fragrance is unmistakable — contrast between blurred sight and vivid smell",
+        "practice_prompt_zh": "用转折写一样东西：先说它某方面不好，再说它另一方面特别好",
+        "practice_prompt_en": "Write about something using a turning point: first mention a weakness, then reveal a strength"
+      },
+      {
+        "technique_id": "sensory-detail",
+        "example": "花朵是一团模糊...香气却毫不含糊，浓浓烈烈地从花枝上袭了下来",
+        "explanation_zh": "同时用视觉（模糊的花）和嗅觉（浓烈的香气）来写，让人仿佛站在花下",
+        "explanation_en": "Using both sight (blurred flowers) and smell (intense fragrance) together, making the reader feel they're standing under the tree",
+        "practice_prompt_zh": "描述一种花或水果，同时写出它的样子和气味",
+        "practice_prompt_en": "Describe a flower or fruit using both what it looks like and what it smells like"
+      },
+      {
+        "technique_id": "reduplication",
+        "example": "浓浓烈烈",
+        "explanation_zh": "把'浓烈'变成'浓浓烈烈'，感觉香气更强烈、更有力量",
+        "explanation_en": "Expanding '浓烈' into '浓浓烈烈' makes the fragrance feel even more intense and powerful",
+        "practice_prompt_zh": "把一个两字词变成叠词（AABB），用来描述你闻到的或尝到的东西",
+        "practice_prompt_en": "Turn a two-character word into AABB reduplication to describe something you smelled or tasted"
+      }
+    ],
+    "tags": {
+      "difficulty": 3,
+      "themes": [
+        "自然",
+        "感官"
+      ],
+      "length": "short",
+      "genre": "prose"
+    },
+    "assignment": {
+      "date": null,
+      "queue_position": 6
+    }
+  },
+  {
+    "id": "2026-04-09-lu-xun-baicaoyuan-01",
+    "title": "从百草园到三味书屋 (节选)",
+    "author": "鲁迅",
+    "source": {
+      "book": "朝花夕拾",
+      "publisher": "人民文学出版社",
+      "edition": "2005年版",
+      "page": null,
+      "source_type": "registry",
+      "registry_entry_id": "src-016"
+    },
+    "content_zh": "不必说碧绿的菜畦，光滑的石井栏，高大的皂荚树，紫红的桑椹；也不必说鸣蝉在树叶里长吟，肥胖的黄蜂伏在菜花上，轻捷的叫天子忽然从草间直窜向云霄里去了。",
+    "content_en": {
+      "text": null,
+      "translator": "Yang Xianyi and Gladys Yang",
+      "publisher": "Foreign Languages Press",
+      "reference_pointer": "See 'Dawn Blossoms Plucked at Dusk', Foreign Languages Press, 1976; or bilingual Echo of Classics edition, 2001 (ISBN 7119026976)"
+    },
+    "expression_patterns": [
+      {
+        "technique_id": "listing",
+        "example": "碧绿的菜畦，光滑的石井栏，高大的皂荚树，紫红的桑椹",
+        "explanation_zh": "一连串列出花园里的好东西，让读者觉得花园里处处是宝",
+        "explanation_en": "Listing garden elements one after another, making the reader feel the garden is full of treasures",
+        "practice_prompt_zh": "用列举的方法描述你最喜欢的一个地方里有什么",
+        "practice_prompt_en": "Use listing to describe what's in your favorite place"
+      },
+      {
+        "technique_id": "parallelism",
+        "example": "不必说...也不必说...",
+        "explanation_zh": "两个'不必说'结构一样，形成递进，好像在说：这些都不算什么，还有更好的呢",
+        "explanation_en": "Two parallel 'no need to mention' clauses build momentum, as if saying: these are nothing, there's even better",
+        "practice_prompt_zh": "用'不必说……也不必说……'写一段话，描述你喜欢的地方",
+        "practice_prompt_en": "Use 'no need to mention... no need to mention...' to describe a place you like"
+      },
+      {
+        "technique_id": "sensory-detail",
+        "example": "碧绿的...光滑的...紫红的...鸣蝉...长吟",
+        "explanation_zh": "用颜色（碧绿、紫红）、触感（光滑）、声音（鸣蝉长吟）多种感官来写，让人身临其境",
+        "explanation_en": "Using color (green, purple-red), texture (smooth), and sound (cicadas singing) to immerse the reader",
+        "practice_prompt_zh": "描述你的学校或家，用至少三种感官来写",
+        "practice_prompt_en": "Describe your school or home using at least three senses"
+      }
+    ],
+    "tags": {
+      "difficulty": 3,
+      "themes": [
+        "童年",
+        "自然"
+      ],
+      "length": "short",
+      "genre": "prose"
+    },
+    "assignment": {
+      "date": null,
+      "queue_position": 4
+    }
+  },
+  {
+    "id": "2026-04-09-saint-exupery-little-prince-01",
+    "title": "小王子 (节选)",
+    "author": "Antoine de Saint-Exupery",
+    "source": {
+      "book": "小王子",
+      "publisher": "上海译文出版社",
+      "edition": "周克希译，2013年版",
+      "page": "68",
+      "source_type": "registry",
+      "registry_entry_id": "src-010"
+    },
+    "content_zh": "如果你驯服了我，我们就会彼此需要。你对我来说是世界上独一无二的。我对你来说也是世界上独一无二的。",
+    "content_en": {
+      "text": "If you tame me, then we shall need each other. To me, you will be unique in all the world. To you, I shall be unique in all the world.",
+      "translator": "Katherine Woods",
+      "publisher": "Mariner Books",
+      "reference_pointer": null
+    },
+    "expression_patterns": [
+      {
+        "technique_id": "repetition",
+        "example": "世界上独一无二的",
+        "explanation_zh": "重复使用'独一无二'这个说法，强调了彼此的特别和珍贵",
+        "explanation_en": "Repeating 'unique in all the world' emphasizes how special and precious the bond is",
+        "practice_prompt_zh": "用反复的手法写一段话，表达一个对你来说很重要的东西",
+        "practice_prompt_en": "Use repetition to write about something important to you"
+      },
+      {
+        "technique_id": "parallelism",
+        "example": "你对我来说……我对你来说……",
+        "explanation_zh": "两个句子结构一样但角色互换，表现了关系是双向的、平等的",
+        "explanation_en": "Two sentences with the same structure but swapped roles, showing the relationship goes both ways equally",
+        "practice_prompt_zh": "用排比的手法写两个对称的句子，描述你和好朋友的关系",
+        "practice_prompt_en": "Use parallelism to write two symmetrical sentences about you and a good friend"
+      }
+    ],
+    "tags": {
+      "difficulty": 2,
+      "themes": [
+        "友情",
+        "珍惜"
+      ],
+      "length": "short",
+      "genre": "prose"
+    },
+    "assignment": {
+      "date": null,
+      "queue_position": 1
+    }
+  },
+  {
+    "id": "2026-04-09-ye-shengtao-pashanhu-01",
+    "title": "爬山虎的脚 (节选)",
+    "author": "叶圣陶",
+    "source": {
+      "book": "叶圣陶散文集",
+      "publisher": "人民文学出版社",
+      "edition": "部编版四年级课文版本",
+      "page": null,
+      "source_type": "registry",
+      "registry_entry_id": "src-020"
+    },
+    "content_zh": "那些叶子绿得那么新鲜，看着非常舒服。叶尖一顺儿朝下，在墙上铺得那么均匀，没有重叠起来的，也不留一点儿空隙。一阵风拂过，一墙的叶子就漾起波纹，好看得很。",
+    "content_en": {
+      "text": null,
+      "translator": null,
+      "publisher": null,
+      "reference_pointer": "Check 'A Ye Shengtao Reader' (Zhang Bojun, China Intercontinental Press, 2013) or 'The Chinese Essay' (Columbia University Press, ed. David Pollard, 2000)"
+    },
+    "expression_patterns": [
+      {
+        "technique_id": "detail-focus",
+        "example": "叶尖一顺儿朝下，在墙上铺得那么均匀，没有重叠起来的，也不留一点儿空隙",
+        "explanation_zh": "仔细观察叶子的方向、排列、间距，抓住小细节写得特别具体",
+        "explanation_en": "Carefully observing the direction, arrangement, and spacing of leaves — capturing tiny details with extraordinary precision",
+        "practice_prompt_zh": "仔细看一片叶子或一朵花，用细节描写把你看到的写下来",
+        "practice_prompt_en": "Look closely at a leaf or flower and write down what you see using detail focus"
+      }
+    ],
+    "tags": {
+      "difficulty": 2,
+      "themes": [
+        "自然",
+        "观察"
+      ],
+      "length": "short",
+      "genre": "prose"
+    },
+    "assignment": {
+      "date": null,
+      "queue_position": 5
+    }
+  },
+  {
+    "id": "2026-04-09-zhu-ziqing-spring-01",
+    "title": "春 (节选)",
+    "author": "朱自清",
+    "source": {
+      "book": "朱自清散文集",
+      "publisher": "人民文学出版社",
+      "edition": "2005年版",
+      "page": "12",
+      "source_type": "registry",
+      "registry_entry_id": "src-001"
+    },
+    "content_zh": "小草偷偷地从土里钻出来，嫩嫩的，绿绿的。园子里，田野里，瞧去，一大片一大片满是的。坐着，躺着，打两个滚，踢几脚球，赛几趟跑，捉几回迷藏。风轻悄悄的，草软绵绵的。",
+    "content_en": {
+      "text": null,
+      "translator": null,
+      "publisher": null,
+      "reference_pointer": "See 'Selected Essays of Zhu Ziqing', Panda Books edition, Chapter 2"
+    },
+    "expression_patterns": [
+      {
+        "technique_id": "personification",
+        "example": "小草偷偷地从土里钻出来",
+        "explanation_zh": "把小草当作人来写，好像它会偷偷做事——让大自然变得活泼有趣",
+        "explanation_en": "Giving grass human behavior (sneaking out) — makes nature feel alive and playful",
+        "practice_prompt_zh": "用拟人的手法描述一种你喜欢的动物或植物",
+        "practice_prompt_en": "Use personification to describe an animal or plant you like"
+      },
+      {
+        "technique_id": "reduplication",
+        "example": "嫩嫩的，绿绿的",
+        "explanation_zh": "把字重复一遍，感觉更柔和、更生动，比单独说'嫩'或'绿'好听",
+        "explanation_en": "Repeating the character intensifies the feeling — softer and more vivid than just saying it once",
+        "practice_prompt_zh": "用叠词描述你今天看到的一样东西",
+        "practice_prompt_en": "Use reduplication to describe something you saw today"
+      }
+    ],
+    "tags": {
+      "difficulty": 2,
+      "themes": [
+        "春天",
+        "自然"
+      ],
+      "length": "short",
+      "genre": "prose"
+    },
+    "assignment": {
+      "date": null,
+      "queue_position": 2
+    }
+  },
+  {
+    "id": "2026-04-15-lao-she-cat-01",
+    "title": "猫 (节选)",
+    "author": "老舍",
+    "source": {
+      "book": "老舍散文集",
+      "publisher": "人民文学出版社",
+      "edition": "部编版四年级下册课文版本",
+      "page": null,
+      "source_type": "registry",
+      "registry_entry_id": "src-002"
+    },
+    "content_zh": "猫的性格实在有些古怪。说它老实吧，它的确有时候很乖。它会找个暖和的地方，成天睡大觉，无忧无虑，什么事也不过问。可是，它决定要出去玩玩，就会出走一天一夜，任凭谁怎么呼唤，它也不肯回来。",
+    "content_en": {
+      "text": null,
+      "translator": null,
+      "publisher": null,
+      "reference_pointer": "No published English translation of this 1959 prose essay found. Check academic anthologies of modern Chinese prose or textbook companion materials."
+    },
+    "expression_patterns": [
+      {
+        "technique_id": "personification",
+        "example": "无忧无虑，什么事也不过问",
+        "explanation_zh": "用描写人的词来写猫，好像猫也会故意偷懒、不管事",
+        "explanation_en": "Using human attitudes ('carefree', 'doesn't bother with anything') to describe the cat, as if it deliberately chooses to be lazy",
+        "practice_prompt_zh": "用拟人的手法写一写你家的宠物或你见过的小动物",
+        "practice_prompt_en": "Use personification to describe a pet or animal you've seen"
+      },
+      {
+        "technique_id": "contrast-transition",
+        "example": "说它老实吧...可是，它决定要出去玩玩",
+        "explanation_zh": "先说猫很乖，再话锋一转说它会离家出走——两面性格形成反差",
+        "explanation_en": "First saying the cat is obedient, then turning with 'but' to reveal it runs away — the two sides of its personality create a vivid contrast",
+        "practice_prompt_zh": "用'……可是……'写一个人或动物性格的两面",
+        "practice_prompt_en": "Use '...but...' to describe two sides of a person's or animal's personality"
+      }
+    ],
+    "tags": {
+      "difficulty": 2,
+      "themes": [
+        "动物",
+        "幽默"
+      ],
+      "length": "short",
+      "genre": "prose"
+    },
+    "assignment": {
+      "date": null,
+      "queue_position": 7
+    }
+  },
+  {
+    "id": "2026-04-15-lin-qingxuan-taohuaxinmu-01",
+    "title": "桃花心木 (节选)",
+    "author": "林清玄",
+    "source": {
+      "book": "林清玄散文集",
+      "publisher": "作家出版社",
+      "edition": "人教版六年级下册课文版本",
+      "page": null,
+      "source_type": "registry",
+      "registry_entry_id": "src-007"
+    },
+    "content_zh": "不只是树，人也是一样，在不确定中生活的人，能比较经得起生活的考验，会锻炼出一颗独立自主的心。在不确定中，就能学会把很少的养分转化为巨大的能量，努力生长。",
+    "content_en": {
+      "text": null,
+      "translator": null,
+      "publisher": null,
+      "reference_pointer": "Check The Chinese Pen (Taipei) back issues for possible published translation. No confirmed English version found."
+    },
+    "expression_patterns": [
+      {
+        "technique_id": "emotion-through-object",
+        "example": "不只是树，人也是一样",
+        "explanation_zh": "前面一直在写树，现在突然说人也一样——用树的故事来讲做人的道理",
+        "explanation_en": "After talking about trees the whole time, suddenly saying people are the same — using a tree's story to teach a life lesson",
+        "practice_prompt_zh": "选一种植物，先描写它怎么生长，再说说人可以从它身上学到什么",
+        "practice_prompt_en": "Pick a plant, describe how it grows, then say what people can learn from it"
+      },
+      {
+        "technique_id": "contrast-transition",
+        "example": "不只是树，人也是一样",
+        "explanation_zh": "话题从树转到人，一句话就把整篇文章的意思升华了",
+        "explanation_en": "The topic pivots from trees to people — one sentence elevates the whole essay's meaning",
+        "practice_prompt_zh": "写一段话先说一样东西，再用'不只是……也是……'转到另一个话题",
+        "practice_prompt_en": "Write about one thing, then use 'not just...also...' to pivot to a deeper topic"
+      },
+      {
+        "technique_id": "antithesis",
+        "example": "很少的养分转化为巨大的能量",
+        "explanation_zh": "'很少'和'巨大'放在一起，形成强烈对比，说明逆境能激发潜力",
+        "explanation_en": "'Very little' and 'enormous' placed side by side create a sharp contrast, showing that adversity can unlock potential",
+        "practice_prompt_zh": "用对比写一个句子，把小的东西和大的东西放在一起",
+        "practice_prompt_en": "Write a sentence using contrast, putting something small next to something big"
+      }
+    ],
+    "tags": {
+      "difficulty": 3,
+      "themes": [
+        "成长",
+        "哲理"
+      ],
+      "length": "short",
+      "genre": "prose"
+    },
+    "assignment": {
+      "date": null,
+      "queue_position": 11
+    }
+  },
+  {
+    "id": "2026-04-15-shen-congwen-biancheng-01",
+    "title": "边城 (节选)",
+    "author": "沈从文",
+    "source": {
+      "book": "边城",
+      "publisher": "人民文学出版社",
+      "edition": "2000年版",
+      "page": null,
+      "source_type": "registry",
+      "registry_entry_id": "src-018"
+    },
+    "content_zh": "小溪流下去，绕山岨流，约三里便汇入茶峒的大河。人若过溪越小山走去，则只一里路就到了茶峒城边。溪流如弓背，山路如弓弦，故远近有了小小差异。",
+    "content_en": {
+      "text": null,
+      "translator": "Jeffrey C. Kinkley",
+      "publisher": "Harper Perennial",
+      "reference_pointer": "See 'Border Town: A Novel' (Harper Perennial, 2009, ISBN 978-0-06-143691-8), Chapter 1"
+    },
+    "expression_patterns": [
+      {
+        "technique_id": "simile",
+        "example": "溪流如弓背，山路如弓弦",
+        "explanation_zh": "把弯弯的溪流比作弓背，把直直的山路比作弓弦——一弯一直，画面一下子就清楚了",
+        "explanation_en": "Comparing the curving stream to a bow's back and the straight mountain path to its string — one curved, one straight, instantly clear",
+        "practice_prompt_zh": "找一样弯的东西和一样直的东西，用比喻把它们联系起来",
+        "practice_prompt_en": "Find something curved and something straight, and use a simile to connect them"
+      },
+      {
+        "technique_id": "scene-setting",
+        "example": "小溪流下去，绕山岨流，约三里便汇入茶峒的大河",
+        "explanation_zh": "用地理位置和距离来描写环境，让读者像看地图一样了解这个地方",
+        "explanation_en": "Using geography and distances to paint the setting, so the reader can picture the place like looking at a map",
+        "practice_prompt_zh": "描述你家附近的一条路或一条河，写出它经过哪些地方",
+        "practice_prompt_en": "Describe a road or river near your home, writing where it goes"
+      }
+    ],
+    "tags": {
+      "difficulty": 3,
+      "themes": [
+        "自然",
+        "乡土"
+      ],
+      "length": "short",
+      "genre": "prose"
+    },
+    "assignment": {
+      "date": null,
+      "queue_position": 9
+    }
+  },
+  {
+    "id": "2026-04-15-wang-zengqi-kunmingdeyu-01",
+    "title": "昆明的雨 (节选)",
+    "author": "汪曾祺",
+    "source": {
+      "book": "汪曾祺散文集",
+      "publisher": "人民文学出版社",
+      "edition": "2005年版",
+      "page": null,
+      "source_type": "registry",
+      "registry_entry_id": "src-005"
+    },
+    "content_zh": "昆明的雨季是明亮的、丰满的，使人动情的。城春草木深，孟夏草木长。昆明的雨季，是浓绿的。",
+    "content_en": {
+      "text": null,
+      "translator": "Martin Woesler",
+      "publisher": "Bochum University Press",
+      "reference_pointer": "See 'The Chinese Essay in the 20th Century' (Bochum University Press, 2000), pp. 138-141, ISBN 3934453147"
+    },
+    "expression_patterns": [
+      {
+        "technique_id": "listing",
+        "example": "明亮的、丰满的，使人动情的",
+        "explanation_zh": "连续用三个词来形容雨季，一个比一个深入——从眼睛看到的，到身体感受的，再到心里的",
+        "explanation_en": "Three qualities in escalating sequence — from visual brightness, to physical fullness, to emotional stirring",
+        "practice_prompt_zh": "用三个词来形容你最喜欢的季节，一个比一个深入",
+        "practice_prompt_en": "Describe your favorite season with three words, each going deeper"
+      },
+      {
+        "technique_id": "short-sentence",
+        "example": "昆明的雨季，是浓绿的。",
+        "explanation_zh": "最后一句特别短，像盖章一样，把整段的意思浓缩成一个颜色",
+        "explanation_en": "The final sentence is deliberately brief — stamping the whole passage with a single vivid color",
+        "practice_prompt_zh": "先写两句长句描述一个地方，再用一句特别短的句子总结",
+        "practice_prompt_en": "Write two longer sentences describing a place, then sum it up with one very short sentence"
+      }
+    ],
+    "tags": {
+      "difficulty": 3,
+      "themes": [
+        "自然",
+        "记忆"
+      ],
+      "length": "short",
+      "genre": "prose"
+    },
+    "assignment": {
+      "date": null,
+      "queue_position": 8
+    }
+  },
+  {
+    "id": "2026-04-15-xiao-hong-hulanhe-01",
+    "title": "呼兰河传 (节选)",
+    "author": "萧红",
+    "source": {
+      "book": "呼兰河传",
+      "publisher": "人民文学出版社",
+      "edition": "部编版五年级课文版本",
+      "page": null,
+      "source_type": "registry",
+      "registry_entry_id": "src-019"
+    },
+    "content_zh": "花开了，就像花睡醒了似的。鸟飞了，就像鸟上天了似的。虫子叫了，就像虫子在说话似的。一切都活了。都有无限的本领，要做什么，就做什么。要怎么样，就怎么样。都是自由的。",
+    "content_en": {
+      "text": null,
+      "translator": "Howard Goldblatt",
+      "publisher": "Cheng & Tsui Company",
+      "reference_pointer": "See 'Tales of Hulan River' (Cheng & Tsui, 2002, ISBN 978-0-887273-92-6), Chapter 3"
+    },
+    "expression_patterns": [
+      {
+        "technique_id": "parallelism",
+        "example": "花开了，就像...鸟飞了，就像...虫子叫了，就像...",
+        "explanation_zh": "三个句子结构完全一样，一个接一个，像波浪一样推过来，越读越有劲",
+        "explanation_en": "Three identically structured sentences roll in one after another like waves, building momentum with each repetition",
+        "practice_prompt_zh": "用'……了，就像……似的'写三个排比句，描述春天的变化",
+        "practice_prompt_en": "Write three parallel sentences using '...just like...' to describe changes in spring"
+      },
+      {
+        "technique_id": "personification",
+        "example": "花睡醒了...虫子在说话",
+        "explanation_zh": "花会睡觉，虫子会说话——用小孩子的眼光看世界，一切都是活的",
+        "explanation_en": "Flowers sleeping, bugs talking — seeing the world through a child's eyes, where everything is alive",
+        "practice_prompt_zh": "假装你是一个小小孩，用拟人的方法描述花园里的三样东西",
+        "practice_prompt_en": "Pretend you're a little kid and use personification to describe three things in a garden"
+      }
+    ],
+    "tags": {
+      "difficulty": 2,
+      "themes": [
+        "童年",
+        "自由",
+        "自然"
+      ],
+      "length": "short",
+      "genre": "prose"
+    },
+    "assignment": {
+      "date": null,
+      "queue_position": 10
+    }
+  }
+]
