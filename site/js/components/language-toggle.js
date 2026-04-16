@@ -4,15 +4,13 @@
  */
 
 const STORAGE_KEY = 'maxchinese_lang';
-let memoryLang = null;
 
 export function getCurrentLang() {
-  try { return localStorage.getItem(STORAGE_KEY) || memoryLang || 'zh'; } catch (e) { return memoryLang || 'zh'; }
+  return localStorage.getItem(STORAGE_KEY) || 'zh';
 }
 
 export function setCurrentLang(lang) {
-  memoryLang = lang;
-  try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) { /* localStorage unavailable */ }
+  localStorage.setItem(STORAGE_KEY, lang);
 }
 
 export function renderLanguageToggle(container, onChange) {

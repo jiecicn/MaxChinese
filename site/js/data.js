@@ -12,9 +12,6 @@ export async function loadData() {
     fetch('data/techniques.json'),
   ]);
 
-  if (!contentRes.ok) throw new Error(`content.json: ${contentRes.status}`);
-  if (!techniquesRes.ok) throw new Error(`techniques.json: ${techniquesRes.status}`);
-
   const content = await contentRes.json();
   const techniques = await techniquesRes.json();
 
@@ -48,7 +45,7 @@ export function getTodayPieces(data, progress) {
     p.assignment && p.assignment.date === today && !skippedMap.has(p.id)
   );
 
-  if (dateAssigned.length > 0) return dateAssigned.slice(0, 1);
+  if (dateAssigned.length > 0) return dateAssigned;
 
   // 2. Resurfaced skipped pieces
   const usageDays = progress.usage_days || 0;
@@ -57,7 +54,7 @@ export function getTodayPieces(data, progress) {
     return skip && usageDays >= skip.resurface_at_usage_day;
   });
 
-  if (resurfaced.length > 0) return resurfaced.slice(0, 1);
+  if (resurfaced.length > 0) return resurfaced.slice(0, 3);
 
   // 3. Queue-ordered pieces (not skipped, changed pieces go to end)
   const changedIds = new Set(
@@ -73,7 +70,7 @@ export function getTodayPieces(data, progress) {
       return a.assignment.queue_position - b.assignment.queue_position;
     });
 
-  if (queued.length > 0) return queued.slice(0, 1);
+  if (queued.length > 0) return queued.slice(0, 3);
 
   return [];
 }

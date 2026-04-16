@@ -16,28 +16,12 @@ const PROGRESS_FILENAME = 'progress.json';
 
 let cachedProgress = null;
 
-// In-memory fallback when localStorage is unavailable (private browsing)
-const memoryStore = {};
-
-function safeGetItem(key) {
-  try {
-    const val = localStorage.getItem(key);
-    if (val !== null) return val;
-  } catch (e) { /* localStorage unavailable */ }
-  return memoryStore[key] || null;
-}
-
-function safeSetItem(key, value) {
-  memoryStore[key] = value;
-  try { localStorage.setItem(key, value); } catch (e) { /* localStorage unavailable */ }
-}
-
 function getConfig() {
-  // Gist ID from build-time config, token from localStorage/memory (entered once by parent)
+  // Gist ID from build-time config, token from localStorage (entered once by parent)
   const buildConfig = window.MAXCHINESE_CONFIG || {};
   return {
-    gist_id: buildConfig.gist_id || safeGetItem('maxchinese_gist_id') || '',
-    token: safeGetItem('maxchinese_gist_token') || '',
+    gist_id: buildConfig.gist_id || localStorage.getItem('maxchinese_gist_id') || '',
+    token: localStorage.getItem('maxchinese_gist_token') || '',
   };
 }
 
@@ -47,8 +31,8 @@ export function isConfigured() {
 }
 
 export function saveSetup(gistId, token) {
-  safeSetItem('maxchinese_gist_id', gistId);
-  safeSetItem('maxchinese_gist_token', token);
+  localStorage.setItem('maxchinese_gist_id', gistId);
+  localStorage.setItem('maxchinese_gist_token', token);
 }
 
 function headers() {
@@ -74,13 +58,9 @@ export async function loadProgress() {
   }
 
   try {
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 8000);
     const res = await fetch(`https://api.github.com/gists/${config.gist_id}`, {
       headers: headers(),
-      signal: controller.signal,
     });
-    clearTimeout(timeout);
     if (!res.ok) throw new Error(`Gist fetch failed: ${res.status}`);
     const gist = await res.json();
     const file = gist.files[PROGRESS_FILENAME];

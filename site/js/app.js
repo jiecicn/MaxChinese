@@ -25,46 +25,29 @@ async function render() {
   const route = getRoute();
   updateNav(route.view);
 
-  // Setup screen works without data
-  if (route.view === 'setup') {
-    renderSetup(main);
+  if (!appData) {
+    main.innerHTML = '<div class="empty-state">Loading...</div>';
     return;
   }
 
-  if (!appData) {
-    main.innerHTML = '<div class="empty-state" id="load-status">Loading data...</div>';
-    try {
-      appData = await loadData();
-    } catch (e) {
-      main.innerHTML = `<div class="empty-state">Failed to load: ${e.message}<br><br><a href="" onclick="location.reload()">Tap to retry</a></div>`;
-      return;
-    }
-  }
-
-  try {
-    switch (route.view) {
-      case 'today':
-        await renderToday(main, appData);
-        break;
-      case 'history':
-        await renderHistory(main, appData);
-        break;
-      case 'techniques':
-        renderTechniques(main, appData);
-        break;
-      case 'technique':
-        renderTechniqueDetail(main, appData, route.param);
-        break;
-      default:
-        await renderToday(main, appData);
-    }
-  } catch (e) {
-    const stack = (e.stack || '').split('\n').slice(0, 4).join('<br>');
-    main.innerHTML = `<div class="empty-state" style="text-align:left;font-size:13px">
-      <b>Error:</b> ${e.message}<br><br>
-      <b>Stack:</b><br>${stack}<br><br>
-      <a href="" onclick="location.reload()">Tap to retry</a>
-    </div>`;
+  switch (route.view) {
+    case 'today':
+      renderToday(main, appData);
+      break;
+    case 'history':
+      renderHistory(main, appData);
+      break;
+    case 'techniques':
+      renderTechniques(main, appData);
+      break;
+    case 'technique':
+      renderTechniqueDetail(main, appData, route.param);
+      break;
+    case 'setup':
+      renderSetup(main);
+      break;
+    default:
+      renderToday(main, appData);
   }
 }
 
@@ -93,32 +76,20 @@ function renderSetup(container) {
 }
 
 async function init() {
+  appData = await loadData();
   window.addEventListener('hashchange', render);
 
-  // If Gist not configured, show setup immediately (no data needed)
+  // If Gist not configured, redirect to setup
   if (!isConfigured()) {
     window.location.hash = 'setup';
-    render();
-    return;
-  }
-
-  try {
-    appData = await loadData();
-  } catch (e) {
-    console.error('Failed to load data:', e);
-    const main = document.getElementById('main');
-    main.innerHTML = '<div class="empty-state">Failed to load data. Pull down to refresh.</div>';
-    return;
   }
 
   render();
 }
 
-// Register service worker (may fail in private browsing)
-try {
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js').catch(() => {});
-  }
-} catch (e) { /* SW unavailable */ }
+// Register service worker
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js');
+}
 
 init();
