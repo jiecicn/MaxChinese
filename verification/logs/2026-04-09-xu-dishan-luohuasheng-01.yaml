@@ -1,0 +1,69 @@
+content_id: "2026-04-09-xu-dishan-luohuasheng-01"
+verified_date: "2026-04-09"
+
+text_verification:
+  status: verified
+  method: "Web search for exact passage text; cross-referenced Baidu Baike entry for 落花生 and multiple Chinese literature sites"
+  notes: >
+    The passage is confirmed verbatim from 许地山《落花生》(1922). The text matches the
+    authoritative Baidu Baike version, including the phrasing "必须挖起来才知道". Note that
+    in the original essay, this passage is spoken by the father (父亲说), which is not
+    included in the proposed excerpt — the excerpt is a valid selection of the father's
+    speech without the dialogue frame. The essay was first published in the collection
+    《空山灵雨》(1925) and is included in the 人教版 fifth-grade Chinese textbook.
+
+attribution_check:
+  author_confirmed: true
+  publisher_confirmed: true
+  notes: >
+    许地山 (1893-1941), pen name 落花生/落华生, is the confirmed author. The essay was
+    written in 1922. 人民文学出版社 has published 许地山散文集, confirmed via Douban and
+    multiple book retailers. The source registry entry src-021 correctly identifies this
+    source. The essay is one of the most widely anthologized pieces in Chinese primary
+    school education.
+
+technique_verification:
+  - technique_id: "antithesis"
+    verdict: kept
+    note: >
+      Correct. The passage explicitly contrasts peanut's hidden fruit (埋在地里, 矮矮地长在地上)
+      with the showy fruits of peach, pomegranate, and apple (把鲜红嫩绿的果实高高地挂在枝头上).
+      This is a textbook example of 对比 (antithesis) — placing two opposite things side by
+      side to highlight their differences. This technique is widely cited in Chinese language
+      education analyses of this passage.
+
+  - technique_id: "listing"
+    verdict: kept
+    note: >
+      Correct. "桃子、石榴、苹果" lists three fruits in sequence to build the contrast with
+      peanuts. This matches the registry definition of 列举 — listing multiple items of the
+      same kind in sequence to add richness. The enumeration of three specific showy fruits
+      strengthens the antithesis.
+
+  - technique_id: "emotion-through-object"
+    verdict: deleted
+    note: >
+      Deleted due to imprecise technique match. The essay's overarching technique is more
+      accurately described as 借物喻人 (using an object to illustrate human qualities) rather
+      than 借物抒情 (expressing personal emotions through an object). The registry defines
+      emotion-through-object as "通过描写某个事物来表达自己的感情" — expressing one's own feelings
+      by describing an object. However, this passage uses peanuts to convey a moral lesson
+      about humility and usefulness, not to express personal emotion. The father is drawing
+      an analogy between peanuts and virtuous character, which is 托物言志/借物喻人, not
+      借物抒情. Additionally, the proposed example ("the whole passage") is too vague — a
+      technique example should cite specific text. Since the registry does not include a
+      借物喻人 technique ID, this pattern should be omitted rather than forced into an
+      ill-fitting category.
+
+english_translation:
+  found: true
+  translator: "张培基 (Zhang Peiji)"
+  publisher: "上海外语教育出版社 (Shanghai Foreign Language Education Press)"
+  reference_pointer: >
+    Published English translation by Zhang Peiji titled "Peanuts" appears in《英译中国现代散文选》
+    (Selected English Translations of Modern Chinese Prose, Volume 1), Shanghai Foreign
+    Language Education Press, 2007, ISBN 9787544604819. Additional translations exist by
+    Yang Xianyi & Gladys Yang (杨宪益、戴乃迭) and Liu Shicong (刘士聪). Note: per project
+    rules, the English translation text must come from the published human translator and
+    must not be LLM-generated. The Zhang Peiji translation should be sourced directly from
+    the published book.

@@ -1,0 +1,57 @@
+content_id: "2026-04-09-bing-xin-xiaojudeng-01"
+verified_date: "2026-04-09"
+
+text_verification:
+  status: verified
+  method: "Web search for exact passage text across multiple sources including douban, ruiwen.com, QQ Reading, and Ximalaya"
+  notes: >
+    The passage is confirmed verbatim from 冰心《小桔灯》. The essay was first published
+    on 9 January 1957 in 中国少年报 (China Children's Paper). The quoted excerpt is the
+    well-known closing paragraph of the essay. All characters match the canonical text
+    exactly: "我提着这灵巧的小桔灯，慢慢地在黑暗潮湿的山路上走着。这朦胧的桔红的光，
+    实在照不了多远，但这小姑娘的镇定、勇敢、乐观的精神鼓舞了我，我似乎觉得眼前有无限光明！"
+
+attribution_check:
+  author_confirmed: true
+  publisher_confirmed: true
+  notes: >
+    冰心 (pen name of 谢婉莹, 1900-1999) is the confirmed author.
+    人民文学出版社 published 《小桔灯》as a collection in 1978 (259 pages, paperback).
+    The source registry entry src-003 lists "冰心散文集" by 人民文学出版社, which is correct.
+    《小桔灯》is one of the most well-known pieces in that collection.
+
+technique_verification:
+  - technique_id: "emotion-through-object"
+    verdict: kept
+    note: >
+      Correct application. The small orange lamp (小桔灯) is the central object through
+      which 冰心 expresses her emotional response — hope, courage, and spiritual brightness.
+      The lamp is made by a brave little girl, and carrying it triggers the author's feeling
+      of "无限光明" (infinite brightness). This is a textbook example of 借物抒情: the
+      physical object (lamp) carries and transmits the emotional meaning (hope and courage).
+      This technique is widely cited in Chinese literary analysis of this essay.
+
+  - technique_id: "sensory-detail"
+    verdict: kept
+    note: >
+      Correct application. The passage contains vivid visual details: "黑暗潮湿的山路"
+      (dark, damp mountain path) engages both sight and touch; "朦胧的桔红的光" (hazy
+      orange-red light) creates a specific visual image. The contrast between darkness
+      and the warm glow of the lamp immerses the reader in the scene. This is a clear
+      use of 感官描写 (sensory description) through visual and tactile details.
+
+  - technique_id: "contrast-transition"
+    verdict: kept
+    note: >
+      Correct application. The passage uses an explicit 转折 marked by the conjunction
+      "但" (but): "实在照不了多远，但...眼前有无限光明". The turn is from the physical
+      limitation (the lamp cannot illuminate far) to the spiritual transcendence (infinite
+      brightness from the girl's spirit). This is a classic contrast-transition structure
+      where the "but" pivots from a negative/limited observation to a positive/expansive
+      one, which is the defining pattern of this technique.
+
+english_translation:
+  found: true
+  translator: "Gong Shifen (龚世芬)"
+  publisher: "Renditions (Chinese University of Hong Kong), Autumn 1989, No. 32, pp. 130-132"
+  reference_pointer: "Gong Shifen, 'The Little Orange Lamp', Renditions No. 32, Autumn 1989, pp. 130-132. Available via CUHK: https://www.cuhk.edu.hk/rct/pdf/e_outputs/b32/v032p130.pdf"

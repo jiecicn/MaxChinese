@@ -1,0 +1,67 @@
+id: "2026-04-09-lu-xun-baicaoyuan-01"
+title: "从百草园到三味书屋 (节选)"
+author: "鲁迅"
+source:
+  book: "朝花夕拾"
+  publisher: "人民文学出版社"
+  edition: "2005年版"
+  page: null
+  source_type: registry
+  registry_entry_id: "src-016"
+
+content_zh: |
+  不必说碧绿的菜畦，光滑的石井栏，高大的皂荚树，紫红的桑椹；也不必说鸣蝉在树叶里长吟，肥胖的黄蜂伏在菜花上，轻捷的叫天子忽然从草间直窜向云霄里去了。
+
+content_en:
+  text: null
+  translator: "Yang Xianyi and Gladys Yang"
+  publisher: "Foreign Languages Press"
+  reference_pointer: "See 'Dawn Blossoms Plucked at Dusk', Foreign Languages Press, 1976; or bilingual Echo of Classics edition, 2001 (ISBN 7119026976)"
+
+expression_patterns:
+  - technique_id: "listing"
+    example: "碧绿的菜畦，光滑的石井栏，高大的皂荚树，紫红的桑椹"
+    explanation_zh: "一连串列出花园里的好东西，让读者觉得花园里处处是宝"
+    explanation_en: "Listing garden elements one after another, making the reader feel the garden is full of treasures"
+    practice_prompt_zh: "用列举的方法描述你最喜欢的一个地方里有什么"
+    practice_prompt_en: "Use listing to describe what's in your favorite place"
+  - technique_id: "parallelism"
+    example: "不必说...也不必说..."
+    explanation_zh: "两个'不必说'结构一样，形成递进，好像在说：这些都不算什么，还有更好的呢"
+    explanation_en: "Two parallel 'no need to mention' clauses build momentum, as if saying: these are nothing, there's even better"
+    practice_prompt_zh: "用'不必说……也不必说……'写一段话，描述你喜欢的地方"
+    practice_prompt_en: "Use 'no need to mention... no need to mention...' to describe a place you like"
+  - technique_id: "sensory-detail"
+    example: "碧绿的...光滑的...紫红的...鸣蝉...长吟"
+    explanation_zh: "用颜色（碧绿、紫红）、触感（光滑）、声音（鸣蝉长吟）多种感官来写，让人身临其境"
+    explanation_en: "Using color (green, purple-red), texture (smooth), and sound (cicadas singing) to immerse the reader"
+    practice_prompt_zh: "描述你的学校或家，用至少三种感官来写"
+    practice_prompt_en: "Describe your school or home using at least three senses"
+
+tags:
+  difficulty: 3
+  themes:
+    - "童年"
+    - "自然"
+  length: short
+  genre: prose
+
+verification:
+  status: verified
+  verified_date: "2026-04-09"
+  method: "web_search + source_match"
+  notes: "Canonical text from 朝花夕拾, confirmed across multiple sources. Parenthetical gloss (云雀) after 叫天子 omitted as editorial annotation."
+  technique_verification:
+    - technique_id: "listing"
+      verdict: kept
+      note: "Four garden elements listed in sequence"
+    - technique_id: "parallelism"
+      verdict: kept
+      note: "不必说...也不必说... is classic parallel structure"
+    - technique_id: "sensory-detail"
+      verdict: kept
+      note: "Visual, tactile, and auditory senses all engaged"
+
+assignment:
+  date: null
+  queue_position: 4

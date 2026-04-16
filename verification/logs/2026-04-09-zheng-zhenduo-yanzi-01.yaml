@@ -1,0 +1,96 @@
+content_id: "2026-04-09-zheng-zhenduo-yanzi-01"
+verified_date: "2026-04-09"
+text_verification:
+  status: partially_verified
+  method: "Web search for 郑振铎《燕子》original text and textbook version comparison"
+  notes: >
+    IMPORTANT: The proposed passage has significant textual inaccuracies that must
+    be corrected before approval.
+
+    The first sentence ("一身乌黑光亮的羽毛，一对俊俏轻快的翅膀，加上剪刀似的尾巴，
+    凑成了活泼机灵的小燕子") matches the textbook version (人教版/部编版三年级下册
+    课文) verbatim, NOT the original text. The original essay《海燕》by 郑振铎 reads:
+    "乌黑的一身羽毛，光滑漂亮，积伶积俐，加上一双剪刀似的尾巴，一对劲俊轻快的翅膀，
+    凑成了那样可爱的活泼的一只小燕子。"
+
+    The second sentence in the proposal has multiple errors compared to both the
+    original and the textbook version. The textbook version reads: "在微风中，在阳光里，
+    燕子斜着身子在天空中掠过，唧唧的叫着。有的由这边的稻田上，一转眼飞到了那边的
+    柳树下了。" Key differences from the proposal: (1) "在阳光里" not "在阳光中";
+    (2) "唧唧的叫着" not "唧的一声"; (3) "有的由这边的稻田上，一转眼飞到了" not
+    "已由这边的稻田上，飞到了". The proposal appears to be a flawed recollection that
+    conflates elements from different parts of the text.
+
+    Additionally, the course text《燕子》is a heavily adapted excerpt from
+    郑振铎's longer essay《海燕》, not a standalone essay. The source should properly
+    cite《海燕》as the original work.
+attribution_check:
+  author_confirmed: true
+  publisher_confirmed: false
+  notes: >
+    郑振铎 (1898-1958) is confirmed as the author. The essay《海燕》(from which the
+    textbook《燕子》is excerpted and adapted) is a well-known work included in
+    人教版 and 部编版 primary school textbooks (三年级下册).
+
+    However, the publisher attribution is problematic. The source registry entry
+    src-022 lists "郑振铎散文集, 人民文学出版社" but the most prominent published
+    edition is《郑振铎散文选集》by 百花文艺出版社 (2004, ed. 陈福康, ISBN
+    9787530603611). While 人民文学出版社 has published郑振铎 works (e.g., as part of
+    《郑振铎全集》), a standalone "郑振铎散文集" from 人民文学出版社 was not confirmed
+    in search results. The source registry entry src-022 should be verified for
+    accurate publisher information. If quoting the textbook version, the source
+    should cite 人民教育出版社 (the textbook publisher), not 人民文学出版社.
+technique_verification:
+  - technique_id: "listing"
+    verdict: kept
+    note: >
+      The opening sentence lists three physical features of the swallow in
+      parallel structure: "一身乌黑光亮的羽毛，一对俊俏轻快的翅膀，加上剪刀似的尾巴".
+      This is a clear example of listing (列举) — enumerating multiple items of
+      the same kind (body parts) in sequence to build a composite picture. The
+      technique ID "listing" exists in techniques/registry.yaml and its definition
+      ("listing multiple items of the same kind in sequence to add richness")
+      matches this usage precisely. Note: this could also be analyzed as
+      parallelism (排比), since the first two items share a "一[measure word]+
+      [adjectives]+的+[body part]" structure, but listing is the more precise
+      label since the primary function is enumeration rather than rhythmic
+      momentum.
+  - technique_id: "simile"
+    verdict: kept
+    note: >
+      "剪刀似的尾巴" is an explicit simile using the marker "似的" to compare the
+      swallow's forked tail to scissors. This is textbook simile (比喻). The
+      technique ID "simile" exists in techniques/registry.yaml and its definition
+      ("comparing one thing to another to make descriptions more vivid") matches
+      this usage precisely.
+  - technique_id: "sensory-detail"
+    verdict: deleted
+    note: >
+      The proposed example text ("唧的一声，已由这边的稻田上，飞到了那边的柳树下了")
+      is textually inaccurate — the actual text reads "唧唧的叫着" (textbook
+      version) or describes the sound differently. More importantly, even
+      correcting the text, the primary technique at work in the swallow's flight
+      description is not sensory detail but rather dynamic action description
+      showing speed and agility. While "唧唧的叫着" contains an auditory element,
+      it functions more as onomatopoeia (拟声, technique ID "onomatopoeia") than
+      as multi-sensory immersive description. The sensory-detail technique in the
+      registry is defined as "describing through sight, sound, smell, taste, and
+      touch to immerse the reader" — this brief mention of sound does not
+      constitute the rich multi-sensory immersion that the technique label implies.
+      Deleted due to both textual inaccuracy in the example and imprecise
+      technique labeling. Recommend replacing with "onomatopoeia" for "唧唧的叫着"
+      if the text is corrected.
+english_translation:
+  found: false
+  translator: null
+  publisher: null
+  reference_pointer: >
+    No published English translation of 郑振铎's essay《海燕》(or its textbook
+    excerpt《燕子》) was found. Zheng Zhenduo is primarily known in English-language
+    scholarship as a literary historian and translator (of Tagore, Greek myths,
+    etc.), not as an essayist. His original prose works do not appear in major
+    English-language anthologies of modern Chinese literature. A possible location
+    would be academic anthologies of modern Chinese prose used in Chinese language
+    teaching programs, or companion materials for the 人教版 primary school
+    curriculum. Search terms: "Zheng Zhenduo Swallows English translation",
+    "郑振铎 海燕 English".

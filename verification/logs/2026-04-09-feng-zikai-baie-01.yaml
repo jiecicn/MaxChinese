@@ -1,0 +1,58 @@
+content_id: "2026-04-09-feng-zikai-baie-01"
+verified_date: "2026-04-09"
+
+text_verification:
+  status: partially_verified
+  method: "Web search for exact passage text across multiple Chinese literary databases and textbook resources"
+  notes: >
+    The passage is confirmed to be from 丰子恺《白鹅》. However, the proposed text uses "京剧"
+    whereas the original essay (written 1946) uses "平剧" (an older name for Beijing opera).
+    The proposed version matches the 人教版 primary school textbook adaptation (四年级下册第15课),
+    which modernized "平剧" to "京剧" for student accessibility. Minor punctuation and wording
+    differences also exist (e.g., original has "这在大体上也与鸭相似" while proposed omits "这在").
+    The source field should clarify whether this is from the original essay collection or the
+    textbook-adapted version.
+
+attribution_check:
+  author_confirmed: true
+  publisher_confirmed: true
+  notes: >
+    丰子恺 is confirmed as the author of《白鹅》, originally written in 1946 in Chongqing.
+    人民文学出版社 has published multiple editions of 丰子恺散文集 containing this essay.
+    The essay is also included in the 人教版 primary school Chinese textbook (四年级下册).
+    Registry entry src-004 correctly identifies 丰子恺散文集 by 丰子恺 published by 人民文学出版社.
+
+technique_verification:
+  - technique_id: "personification"
+    verdict: kept
+    note: >
+      Correct. "傲慢" (arrogant/haughty) is a human attitude attributed to the goose.
+      This is textbook personification (拟人) — giving an animal a human emotional quality.
+      The registry definition ("把事物当作人来描写，赋予它人的动作或感情") matches precisely.
+
+  - technique_id: "antithesis"
+    verdict: kept
+    note: >
+      Correct. The passage explicitly contrasts the duck and goose in parallel structure:
+      "鸭的步调急速，有局促不安之相" vs "鹅的步调从容，大模大样的".
+      This is classic antithesis/对比 — placing two opposite things side by side to highlight
+      their differences. The registry definition matches.
+
+  - technique_id: "simile"
+    verdict: kept
+    note: >
+      Correct. "颇像京剧里的净角出场" uses "像" to explicitly compare the goose's stately
+      walk to a 净角 (painted-face character) entering the stage in Beijing opera.
+      This is a clear simile (比喻/明喻). The registry definition matches.
+
+english_translation:
+  found: false
+  translator: null
+  publisher: null
+  reference_pointer: >
+    No published English translation of 丰子恺《白鹅》was found. A general English collection
+    "A Feng Zikai Reader" exists but it is unclear whether it includes this specific essay.
+    Check: (1) "A Feng Zikai Reader" (English edition) via lib.thatsbooks.com for table of
+    contents; (2) "The Chinese Essay" (Columbia University Press, ed. David Pollard) which
+    includes some Feng Zikai essays; (3) academic journal translations in repositories such
+    as JSTOR or university Chinese literature translation anthologies.

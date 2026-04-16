@@ -1,0 +1,87 @@
+content_id: "2026-04-15-shen-congwen-biancheng-01"
+verified_date: "2026-04-09"
+
+text_verification:
+  status: verified
+  method: "Web search for exact passage text across multiple sources including QQ Reading, Sina blog, Qidian, and Baidu Baike"
+  notes: >
+    The passage is confirmed verbatim from 沈从文《边城》Chapter 1. The text appears in
+    the second paragraph of the novel's opening. The full canonical text of this section reads:
+    "小溪流下去，绕山岨流，约三里便汇入茶峒的大河。人若过溪越小山走去，则只一里路就到了
+    茶峒城边。溪流如弓背，山路如弓弦，故远近有了小小差异。" All characters in the proposed
+    passage match the canonical text exactly. The passage immediately follows the famous opening:
+    "由四川过湖南去，靠东有一条官路。这官路将近湘西边境到了一个地方名为'茶峒'的小山城时，
+    有一小溪，溪边有座白色小塔，塔下住了一户单独的人家。这人家只一个老人，一个女孩子，
+    一只黄狗。" Note: 《边城》was first published in 1934 as a novella (中篇小说), not an
+    essay. The source registry entry src-018 lists "沈从文散文集" which is an essay collection.
+    While some omnibus editions include 《边城》alongside Shen Congwen's essays, strictly
+    speaking 《边城》is a novella, not a prose essay (散文). The source attribution should
+    ideally reference a 《边城》edition directly rather than a 散文集.
+
+attribution_check:
+  author_confirmed: true
+  publisher_confirmed: true
+  notes: >
+    沈从文 (1902-1988) is the confirmed author. 人民文学出版社 has published multiple editions
+    of 《边城》, including standalone editions and combined volumes (e.g., 《边城·湘行散记》).
+    The source registry entry src-018 ("沈从文散文集", 人民文学出版社) is a valid publisher
+    match, though the specific book title is slightly mismatched: 《边城》is a novella, not
+    an essay. Some 人民文学出版社 omnibus editions do combine the novella with essay selections,
+    so this is not disqualifying but should be noted. The content proposal lists the source
+    book as "沈从文散文集" which is acceptable if using such an omnibus edition.
+
+technique_verification:
+  - technique_id: "simile"
+    verdict: kept
+    note: >
+      Correct application. "溪流如弓背，山路如弓弦" is a textbook-grade simile (明喻) using
+      the explicit comparison marker "如" (like/as). The stream's winding course is compared
+      to the curved back of a bow (弓背), and the mountain path cutting straight across is
+      compared to the bowstring (弓弦). This is one of the most frequently cited similes in
+      modern Chinese literature and appears in virtually every literary analysis of 《边城》.
+      The comparison is both visually precise and structurally elegant — the two parallel
+      clauses ("溪流如弓背" and "山路如弓弦") mirror each other, reinforcing the contrast
+      between the curved stream and the straight path. The technique_id "simile" is correct
+      per the registry definition: "用一个事物来比另一个事物，使描写更形象."
+
+  - technique_id: "scene-setting"
+    verdict: kept
+    note: >
+      Correct application. The entire passage functions as 环境描写 (scene setting),
+      establishing the physical geography of the area around 茶峒 (Chadong) — the stream,
+      the mountains, the distances (三里 via stream vs. 一里 via path), and the spatial
+      relationship between the creek and the town. This opening description sets the stage
+      for the entire novella by grounding the reader in the landscape of western Hunan
+      (湘西). It creates a sense of pastoral remoteness and natural beauty that pervades
+      the whole work. The technique_id "scene-setting" matches the registry definition:
+      "用周围环境的描写来烘托气氛或人物心情."
+
+  - technique_id: "short-sentence"
+    verdict: deleted
+    note: >
+      Doubtful application — deleted per verification policy. The cited example "故远近有了
+      小小差异" is indeed a concise concluding clause, but calling it a "short sentence"
+      technique is questionable in this context. The passage as a whole does not employ a
+      notably short-sentence style; the sentences are moderate to long, with complex clause
+      structures (e.g., "人若过溪越小山走去，则只一里路就到了茶峒城边"). The registry
+      definition for "short-sentence" is "用简短有力的句子，表达干脆利落" (using brief, punchy
+      sentences for crisp, direct expression). While "故远近有了小小差异" is a compact
+      conclusion, it functions more as the logical culmination of the bow/bowstring simile
+      than as an independent demonstration of short-sentence technique. The passage's style
+      is better characterized by its elegance and parallelism rather than by short-sentence
+      punchiness. Because there is genuine doubt about whether this qualifies, the technique
+      is deleted per the project rule: "if any doubt, delete that technique entirely."
+
+english_translation:
+  found: true
+  translator: "Jeffrey C. Kinkley"
+  publisher: "Harper Perennial (2009), ISBN 978-0-06-143691-8"
+  reference_pointer: >
+    Jeffrey C. Kinkley (trans.), "Border Town: A Novel", Harper Perennial, 2009.
+    This is the most recent and widely available English translation. Earlier translations
+    include: (1) Emily Hahn and Shing Mo-lei, "Green Jade" in T'ien Hsia Monthly, 1936;
+    (2) Ching Ti and Robert Payne, "The Frontier City" in The Chinese Earth, George Allen
+    and Unwin, 1947; (3) Gladys Yang, "The Border Town" in Chinese Literature (journal),
+    Foreign Languages Press Beijing, 1962. The Kinkley translation is the authoritative
+    modern English edition. The exact English rendering of this specific passage can be
+    found in Chapter 1 of the Kinkley translation.

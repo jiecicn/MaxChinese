@@ -1,0 +1,58 @@
+id: "2026-04-15-lao-she-cat-01"
+title: "猫 (节选)"
+author: "老舍"
+source:
+  book: "老舍散文集"
+  publisher: "人民文学出版社"
+  edition: "部编版四年级下册课文版本"
+  page: null
+  source_type: registry
+  registry_entry_id: "src-002"
+
+content_zh: |
+  猫的性格实在有些古怪。说它老实吧，它的确有时候很乖。它会找个暖和的地方，成天睡大觉，无忧无虑，什么事也不过问。可是，它决定要出去玩玩，就会出走一天一夜，任凭谁怎么呼唤，它也不肯回来。
+
+content_en:
+  text: null
+  translator: null
+  publisher: null
+  reference_pointer: "No published English translation of this 1959 prose essay found. Check academic anthologies of modern Chinese prose or textbook companion materials."
+
+expression_patterns:
+  - technique_id: "personification"
+    example: "无忧无虑，什么事也不过问"
+    explanation_zh: "用描写人的词来写猫，好像猫也会故意偷懒、不管事"
+    explanation_en: "Using human attitudes ('carefree', 'doesn't bother with anything') to describe the cat, as if it deliberately chooses to be lazy"
+    practice_prompt_zh: "用拟人的手法写一写你家的宠物或你见过的小动物"
+    practice_prompt_en: "Use personification to describe a pet or animal you've seen"
+  - technique_id: "contrast-transition"
+    example: "说它老实吧...可是，它决定要出去玩玩"
+    explanation_zh: "先说猫很乖，再话锋一转说它会离家出走——两面性格形成反差"
+    explanation_en: "First saying the cat is obedient, then turning with 'but' to reveal it runs away — the two sides of its personality create a vivid contrast"
+    practice_prompt_zh: "用'……可是……'写一个人或动物性格的两面"
+    practice_prompt_en: "Use '...but...' to describe two sides of a person's or animal's personality"
+
+tags:
+  difficulty: 2
+  themes:
+    - "动物"
+    - "幽默"
+  length: short
+  genre: prose
+
+verification:
+  status: verified
+  verified_date: "2026-04-15"
+  method: "web_search + source_match"
+  notes: "Text confirmed from 老舍《猫》(1959). Minor editorial variant '暖和地方' vs '暖和的地方' across editions; using textbook version."
+  technique_verification:
+    - technique_id: "personification"
+      verdict: kept
+      note: "Human psychological states ascribed to cat — textbook 拟人"
+    - technique_id: "contrast-transition"
+      verdict: kept
+      note: "Classic 转折 with 可是 — signature structural device of the essay"
+
+assignment:
+  date: null
+  queue_position: 7

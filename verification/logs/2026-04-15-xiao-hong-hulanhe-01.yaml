@@ -1,0 +1,76 @@
+content_id: "2026-04-15-xiao-hong-hulanhe-01"
+verified_date: "2026-04-09"
+
+text_verification:
+  status: partially_verified
+  method: "Web search for exact passage text across multiple sources including baidu baike, chinawriter.com.cn, douban, yuzhenhai.com, and zhihu"
+  notes: >
+    The first three sentences are confirmed verbatim from 萧红《呼兰河传》第三章 (the chapter
+    known in textbooks as《祖父的园子》). The confirmed original text reads:
+    "花开了，就像花睡醒了似的。鸟飞了，就像鸟上天了似的。虫子叫了，就像虫子在说话似的。
+    一切都活了。都有无限的本领，要做什么，就做什么。要怎么样，就怎么样。都是自由的。"
+    PROBLEM: The proposed passage truncates and alters the ending. The original has
+    "一切都活了。" (period, full stop) as its own sentence, followed by "都有无限的本领，
+    要做什么，就做什么。要怎么样，就怎么样。都是自由的。" — three additional sentences.
+    The proposed version collapses this into "一切都活了，都是自由的。" (comma-joined, skipping
+    intermediate sentences). This is NOT the original text. The passage must be corrected
+    to match the original, either by including the full paragraph or by cutting cleanly
+    after "虫子在说话似的。" without fabricating a combined ending.
+
+attribution_check:
+  author_confirmed: true
+  publisher_confirmed: true
+  notes: >
+    萧红 (1911-1942, pen name of 张迺莹) is the confirmed author of《呼兰河传》. The novel
+    was first published in 1940 (serialized in 香港《星岛日报》副刊) and as a standalone
+    book in 1941 by 桂林河山出版社. 人民文学出版社 has published multiple authoritative editions.
+    The source registry entry src-019 lists "萧红散文集" by 人民文学出版社, which is correct.
+    Note: 《呼兰河传》 is technically a novel (长篇小说), not an essay, though the chapter in
+    question (第三章) is frequently excerpted as standalone prose in textbooks under the title
+    《祖父的园子》 and appears in the 部编版 fifth-grade Chinese language textbook (五年级下册).
+
+technique_verification:
+  - technique_id: "parallelism"
+    verdict: kept
+    note: >
+      Correct application. The three sentences "花开了，就像花睡醒了似的。鸟飞了，就像鸟上天了
+      似的。虫子叫了，就像虫子在说话似的。" are a textbook example of 排比 (parallelism):
+      three structurally identical clauses following the pattern "[subject][verb]了，就像
+      [subject][action]似的" arranged in sequence to build rhythmic momentum. This is widely
+      cited as a model of parallelism in Chinese language pedagogy.
+
+  - technique_id: "personification"
+    verdict: kept
+    note: >
+      Correct application, though incomplete. "花睡醒了" (flowers waking from sleep) and
+      "虫子在说话" (bugs talking) are clear examples of 拟人 (personification), attributing
+      human behaviors (sleeping, speaking) to non-human things. However, it should be noted
+      that the grammatical structure "就像...似的" is also a simile (比喻/明喻). The passage
+      uses simile-form personification — the personification is delivered via explicit
+      comparison. The personification label is valid and is the more pedagogically important
+      technique here; the simile structure is the vehicle for delivering it. No deletion
+      warranted, but an instructor could additionally note the simile layer.
+
+  - technique_id: "short-sentence"
+    verdict: deleted
+    note: >
+      DELETED. The cited example "一切都活了，都是自由的" does not exist in the original text.
+      In the original, "一切都活了。" is a standalone sentence (ending with a period), and
+      "都是自由的。" appears three sentences later, after "都有无限的本领，要做什么，就做什么。
+      要怎么样，就怎么样。" The proposed example fabricates a sentence by splicing two
+      non-adjacent fragments with a comma. While the original text does employ short punchy
+      sentences (e.g., "一切都活了。" on its own is indeed a powerful short sentence), the
+      example as cited is inaccurate. This technique could be re-proposed with a corrected
+      example drawn from the actual original text, but as submitted it must be rejected.
+
+english_translation:
+  found: true
+  translator: "Howard Goldblatt (葛浩文)"
+  publisher: "Indiana University Press (1979, first edition, chapters 1-5 only); Cheng & Tsui Company, Boston (2002, complete edition, ISBN 978-0-887273-92-6)"
+  reference_pointer: >
+    Howard Goldblatt (trans.), "The Field of Life and Death & Tales of Hulan River" by
+    Xiao Hong, Cheng & Tsui Company, 2002, ISBN 978-0-887273-92-6. The passage in question
+    is from Chapter 3 of Tales of Hulan River. The 1979 Indiana University Press edition
+    (first English publication) included only the first five chapters. The 2002 Cheng & Tsui
+    edition is the complete translation. Also available via Internet Archive:
+    https://archive.org/details/fieldoflifedeath00xiao

@@ -1,0 +1,82 @@
+content_id: "2026-04-15-wang-zengqi-kunmingdeyu-01"
+verified_date: "2026-04-09"
+
+text_verification:
+  status: verified
+  method: "Web search for exact passage text across multiple sources including Baidu Baike, Sina Blog, Jianshu, Douban, and educational sites"
+  notes: >
+    The passage is confirmed verbatim from 汪曾祺《昆明的雨》. The essay was written in
+    May 1984 and is one of Wang Zengqi's most celebrated prose pieces. Multiple authoritative
+    sources (Baidu Baike, educational course materials, literary analysis sites) confirm the
+    exact text: "昆明的雨季是明亮的、丰满的，使人动情的。城春草木深，孟夏草木长。昆明的雨季，
+    是浓绿的。" The passage continues in the original with "草木的枝叶里的水分都到了饱和状态，
+    显示出过分的、近于夸张的旺盛。" The proposed excerpt ends at "昆明的雨季，是浓绿的。"
+    which is a clean breakpoint within the paragraph. All characters match the canonical text
+    exactly. Note that "城春草木深" is a quotation from Du Fu's《春望》and "孟夏草木长" is
+    from Tao Yuanming's《读山海经·其一》— Wang Zengqi embeds these classical allusions
+    naturally into his prose.
+
+attribution_check:
+  author_confirmed: true
+  publisher_confirmed: true
+  notes: >
+    汪曾祺 (1920-1997) is the confirmed author. 人民文学出版社 published《汪曾祺散文》
+    in 2005 (中华散文插图珍藏版, 285 pages, ISBN 9787020050345) and also published
+    《汪曾祺小说散文精选》as part of the 教育部统编《语文》推荐阅读丛书 (ISBN 9787020138142).
+    Additionally, 人民文学出版社 published《汪曾祺全集》in 12 volumes in January 2019
+    (ISBN 9787020143412). The source registry entry src-005 lists "汪曾祺散文集" by
+    人民文学出版社, which is correct and well-attested. 《昆明的雨》is one of the most
+    frequently anthologized pieces and is included in the 人教版 middle school Chinese
+    textbook (八年级上册), further confirming its canonical status.
+
+technique_verification:
+  - technique_id: "listing"
+    verdict: kept
+    note: >
+      Correct application. The example "明亮的、丰满的，使人动情的" lists three qualities
+      in sequence to build an impression of Kunming's rainy season. This matches the
+      technique definition of "listing multiple items of the same kind in sequence to add
+      richness" (一连串列出多个同类事物，增加丰富感). The three listed items are all
+      adjective-like descriptions of the rainy season, presented in a climbing sequence:
+      from visual ("明亮的") to tactile/emotional ("丰满的") to fully emotional
+      ("使人动情的"), creating an escalation effect. This is a clear and standard use
+      of the listing technique.
+
+  - technique_id: "sensory-detail"
+    verdict: deleted
+    note: >
+      Deleted due to weak specificity. While the passage does evoke a visual impression
+      of lush green ("浓绿的"), the proposed example was "the whole passage" rather than
+      a specific phrase, which is too vague. The passage is only three sentences long and
+      primarily works through abstract qualities ("明亮的、丰满的") and classical
+      allusions rather than concrete sensory detail (sight, sound, smell, taste, touch).
+      The word "浓绿的" is a single color adjective, not a developed sensory description.
+      Compared to a true sensory-detail passage (e.g., "黑暗潮湿的山路" engaging sight
+      and touch), this excerpt operates more at the level of emotional impression than
+      immersive sensory writing. The technique label is defensible in the context of the
+      full essay, but for this short excerpt it is a stretch. Per verification rules,
+      any doubt means deletion.
+
+  - technique_id: "short-sentence"
+    verdict: kept
+    note: >
+      Correct application. "昆明的雨季，是浓绿的。" is a deliberately brief, punchy
+      concluding sentence (only 9 characters of content). It follows two longer, more
+      elaborate sentences and lands with a crisp, definitive statement. This matches the
+      technique definition of "using brief, punchy sentences for crisp, direct expression"
+      (用简短有力的句子，表达干脆利落). The comma pause before "是浓绿的" adds rhythmic
+      emphasis, and the sentence's placement at the end of the excerpt gives it a
+      conclusive, almost epigrammatic quality — classic short-sentence technique.
+
+english_translation:
+  found: true
+  translator: "Martin Woesler"
+  publisher: "Bochum University Press, 2000"
+  reference_pointer: >
+    Martin Woesler (trans.), 'The Rain in Kunming', in Martin Woesler (ed.),
+    The Chinese Essay in the 20th Century (Bochum: Bochum University Press, 2000),
+    pp. 138-141. ISBN 3934453147. Available via Amazon and academic libraries.
+    Note: this translation covers the full essay. Verification of whether the specific
+    excerpt's translation matches published text would require consulting the physical book.
+    The English text from this translation should NOT be used unless verified against the
+    published page. Record as reference_pointer only.

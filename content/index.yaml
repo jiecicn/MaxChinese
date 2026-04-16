@@ -1,11 +1,61 @@
 entries:
+- author: 冰心
+  content_hash: 129acd6200bfdd40bff74c5031e97f9792da9ca8e442f008d0dc98ca857ccbc8
+  first_line: 我提着这灵巧的小桔灯，慢慢地在黑暗潮湿的山路上走着。这朦胧的桔红的光，实在照不了多远，但这小姑娘的镇定、勇敢、乐观的精神鼓舞了我，我似乎觉得眼前有无限光明！
+  id: 2026-04-09-bing-xin-xiaojudeng-01
+  source: 冰心散文集
+- author: 丰子恺
+  content_hash: 7b1c7a61bacc99522a090f58ddc5b2e32c712739074ac99d14d689bf45fefa25
+  first_line: 鹅的步态，更是傲慢了。大体上与鸭相似，但鸭的步调急速，有局促不安之相；鹅的步调从容，大模大样的，颇像京剧里的净角出场。
+  id: 2026-04-09-feng-zikai-baie-01
+  source: 丰子恺散文集
+- author: 季羡林
+  content_hash: f23e47723b4835a3ac48c46348363d94c30603cd9de735aebe16c3941aae37f2
+  first_line: 但是夹竹桃的妙处还不止于此。我特别喜欢月光下的夹竹桃。你站在它下面，花朵是一团模糊；但是香气却毫不含糊，浓浓烈烈地从花枝上袭了下来。
+  id: 2026-04-09-ji-xianlin-jiazhutao-01
+  source: 季羡林散文集
+- author: 鲁迅
+  content_hash: b72a005d9f01a020017d39db227478d82d9adc3ef7ff538542a31b5a20dd794d
+  first_line: 不必说碧绿的菜畦，光滑的石井栏，高大的皂荚树，紫红的桑椹；也不必说鸣蝉在树叶里长吟，肥胖的黄蜂伏在菜花上，轻捷的叫天子忽然从草间直窜向云霄里去了。
+  id: 2026-04-09-lu-xun-baicaoyuan-01
+  source: 朝花夕拾
 - author: Antoine de Saint-Exupery
   content_hash: 7a333822ec0042e3a03a39e608ad335161e724113e4e13366ef8c1fc81d78ca7
   first_line: 如果你驯服了我，我们就会彼此需要。你对我来说是世界上独一无二的。我对你来说也是世界上独一无二的。
   id: 2026-04-09-saint-exupery-little-prince-01
   source: 小王子
+- author: 叶圣陶
+  content_hash: 2b189f4d5e5bc01fefec6ebeb0892ed266b82b5e1071d673111c3e0a437d81f3
+  first_line: 那些叶子绿得那么新鲜，看着非常舒服。叶尖一顺儿朝下，在墙上铺得那么均匀，没有重叠起来的，也不留一点儿空隙。一阵风拂过，一墙的叶子就漾起波纹，好看得很。
+  id: 2026-04-09-ye-shengtao-pashanhu-01
+  source: 叶圣陶散文集
 - author: 朱自清
   content_hash: b40f04cc156fd7dac8f5d65bd69f768c0a0754b0277da5d8de7878896b704d97
   first_line: 小草偷偷地从土里钻出来，嫩嫩的，绿绿的。园子里，田野里，瞧去，一大片一大片满是的。坐着，躺着，打两个滚，踢几脚球，赛几趟跑，捉几回迷藏。风轻悄悄的，草软绵绵的。
   id: 2026-04-09-zhu-ziqing-spring-01
   source: 朱自清散文集
+- author: 老舍
+  content_hash: 0725319af59a800f8dbd6b5e8440703da6f355e7edb482684acfaff79baa91bd
+  first_line: 猫的性格实在有些古怪。说它老实吧，它的确有时候很乖。它会找个暖和的地方，成天睡大觉，无忧无虑，什么事也不过问。可是，它决定要出去玩玩，就会出走一天一夜，任凭谁怎么呼唤，它也不肯回来。
+  id: 2026-04-15-lao-she-cat-01
+  source: 老舍散文集
+- author: 林清玄
+  content_hash: 6e65f9cc63452dad059d8a108a67b11159164335b498e55ba12f0e5aa000c996
+  first_line: 不只是树，人也是一样，在不确定中生活的人，能比较经得起生活的考验，会锻炼出一颗独立自主的心。在不确定中，就能学会把很少的养分转化为巨大的能量，努力生长。
+  id: 2026-04-15-lin-qingxuan-taohuaxinmu-01
+  source: 林清玄散文集
+- author: 沈从文
+  content_hash: 4872d12678f887d7ddad00ad925687cbcbe07ea82c377238862d85b15260f794
+  first_line: 小溪流下去，绕山岨流，约三里便汇入茶峒的大河。人若过溪越小山走去，则只一里路就到了茶峒城边。溪流如弓背，山路如弓弦，故远近有了小小差异。
+  id: 2026-04-15-shen-congwen-biancheng-01
+  source: 边城
+- author: 汪曾祺
+  content_hash: b3b05e02e6379445020d45d9fe8afe6f0afbff7cb7688225cc2a796a998ba3fa
+  first_line: 昆明的雨季是明亮的、丰满的，使人动情的。城春草木深，孟夏草木长。昆明的雨季，是浓绿的。
+  id: 2026-04-15-wang-zengqi-kunmingdeyu-01
+  source: 汪曾祺散文集
+- author: 萧红
+  content_hash: 4ac0aa5575be6646a046279265fdf5ead3c868e16a8c8d6af58c46804a8c1d92
+  first_line: 花开了，就像花睡醒了似的。鸟飞了，就像鸟上天了似的。虫子叫了，就像虫子在说话似的。一切都活了。都有无限的本领，要做什么，就做什么。要怎么样，就怎么样。都是自由的。
+  id: 2026-04-15-xiao-hong-hulanhe-01
+  source: 呼兰河传

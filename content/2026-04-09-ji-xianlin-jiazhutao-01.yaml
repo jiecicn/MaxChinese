@@ -1,0 +1,67 @@
+id: "2026-04-09-ji-xianlin-jiazhutao-01"
+title: "夹竹桃 (节选)"
+author: "季羡林"
+source:
+  book: "季羡林散文集"
+  publisher: "人民文学出版社"
+  edition: "2007年版"
+  page: null
+  source_type: registry
+  registry_entry_id: "src-023"
+
+content_zh: |
+  但是夹竹桃的妙处还不止于此。我特别喜欢月光下的夹竹桃。你站在它下面，花朵是一团模糊；但是香气却毫不含糊，浓浓烈烈地从花枝上袭了下来。
+
+content_en:
+  text: null
+  translator: null
+  publisher: null
+  reference_pointer: "Check Foreign Languages Press / Panda Books Chinese prose anthologies; Ji Xianlin in English: 'The Cowshed' (Chenxin Jiang, NYRB, 2016)"
+
+expression_patterns:
+  - technique_id: "contrast-transition"
+    example: "花朵是一团模糊；但是香气却毫不含糊"
+    explanation_zh: "先说花看不清楚，再一转说香气却非常强烈——视觉模糊和嗅觉清晰形成反差"
+    explanation_en: "First saying the flowers are blurred, then turning to say the fragrance is unmistakable — contrast between blurred sight and vivid smell"
+    practice_prompt_zh: "用转折写一样东西：先说它某方面不好，再说它另一方面特别好"
+    practice_prompt_en: "Write about something using a turning point: first mention a weakness, then reveal a strength"
+  - technique_id: "sensory-detail"
+    example: "花朵是一团模糊...香气却毫不含糊，浓浓烈烈地从花枝上袭了下来"
+    explanation_zh: "同时用视觉（模糊的花）和嗅觉（浓烈的香气）来写，让人仿佛站在花下"
+    explanation_en: "Using both sight (blurred flowers) and smell (intense fragrance) together, making the reader feel they're standing under the tree"
+    practice_prompt_zh: "描述一种花或水果，同时写出它的样子和气味"
+    practice_prompt_en: "Describe a flower or fruit using both what it looks like and what it smells like"
+  - technique_id: "reduplication"
+    example: "浓浓烈烈"
+    explanation_zh: "把'浓烈'变成'浓浓烈烈'，感觉香气更强烈、更有力量"
+    explanation_en: "Expanding '浓烈' into '浓浓烈烈' makes the fragrance feel even more intense and powerful"
+    practice_prompt_zh: "把一个两字词变成叠词（AABB），用来描述你闻到的或尝到的东西"
+    practice_prompt_en: "Turn a two-character word into AABB reduplication to describe something you smelled or tasted"
+
+tags:
+  difficulty: 3
+  themes:
+    - "自然"
+    - "感官"
+  length: short
+  genre: prose
+
+verification:
+  status: verified
+  verified_date: "2026-04-09"
+  method: "web_search + source_match"
+  notes: "Verbatim match confirmed from sixth section of 季羡林《夹竹桃》"
+  technique_verification:
+    - technique_id: "contrast-transition"
+      verdict: kept
+      note: "Classic 但是...却... turning-point from blurred visual to sharp scent"
+    - technique_id: "sensory-detail"
+      verdict: kept
+      note: "Visual and olfactory senses working together"
+    - technique_id: "reduplication"
+      verdict: kept
+      note: "Standard AABB reduplication of 浓烈"
+
+assignment:
+  date: null
+  queue_position: 6

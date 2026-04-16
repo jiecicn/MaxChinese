@@ -1,0 +1,65 @@
+content_id: "2026-04-15-lao-she-cat-01"
+verified_date: "2026-04-09"
+text_verification:
+  status: partially_verified
+  method: "Web search for exact passage text across multiple sources including Baidu Baike, ruiwen.com, zhihu.com, and textbook reference sites"
+  notes: >
+    The passage is confirmed to be from 老舍's essay《猫》, first published in
+    《新观察》第16期 (August 1959). It is also a standard text in the 人教版
+    (部编版) fourth-grade Chinese language textbook (四年级下册第13课). The proposed
+    text matches the canonical version with one minor discrepancy: web sources
+    consistently show "找个暖和地方" (without 的), while the proposed text reads
+    "找个暖和的地方" (with 的). This is a known editorial variant across different
+    textbook and anthology editions. The remainder of the passage is verbatim.
+    Marked partially_verified pending confirmation of the specific edition used.
+attribution_check:
+  author_confirmed: true
+  publisher_confirmed: true
+  notes: >
+    老舍 (Lao She, born 舒庆春, 1899-1966) is the confirmed author of《猫》(1959).
+    He was awarded the title "人民艺术家" and is one of China's most celebrated
+    modern prose writers. 人民文学出版社 has published multiple collections
+    containing this essay, including《老舍文集》(16 volumes, 1980-1991),
+    《老舍全集》(19 volumes, 2013), and various standalone《老舍散文》/《老舍散文选》
+    editions. Source registry entry src-002 ("老舍散文集", 人民文学出版社) is accurate
+    and matches.
+technique_verification:
+  - technique_id: "personification"
+    verdict: kept
+    note: >
+      The phrase "无忧无虑，什么事也不过问" ascribes human psychological states
+      (carefree attitude, deliberate disengagement from affairs) to a cat. This
+      is textbook personification (拟人). The technique ID "personification"
+      exists in techniques/registry.yaml and its definition ("describing things
+      as if they were human, giving them human actions or feelings") matches
+      this usage precisely. Additionally, "说它老实吧" and "它决定要出去玩玩"
+      further attribute human decision-making and moral character to the cat,
+      reinforcing the personification throughout the passage.
+  - technique_id: "contrast-transition"
+    verdict: kept
+    note: >
+      The structure "说它老实吧，它的确有时候很乖...可是，它决定要出去玩玩" is a
+      classic contrast transition (转折). The author first establishes the cat's
+      obedient, docile nature, then pivots with "可是" to reveal the opposite
+      behavior — willful independence. The technique ID "contrast-transition"
+      exists in techniques/registry.yaml and its definition ("starting in one
+      direction then turning to express something different or opposite") matches
+      this usage precisely. This contrast structure is in fact the signature
+      organizational technique of the entire essay, which presents multiple
+      opposing facets of the cat's character in succession.
+english_translation:
+  found: false
+  translator: null
+  publisher: null
+  reference_pointer: >
+    No published English translation of 老舍's 1959 prose essay《猫》was found
+    after searching multiple sources. Important disambiguation: this essay is
+    entirely distinct from 老舍's 1932 satirical novel《猫城记》(Cat Country),
+    which has been translated by William A. Lyell (Ohio State University Press,
+    1970; Penguin Books, 2013). The essay《猫》does not appear in "Blades of
+    Grass: The Stories of Lao She" (University of Hawaii Press, 1999, tr.
+    William A. Lyell & Sarah Wei-ming Chen), which contains 14 fiction pieces
+    and two autobiographical essays — none of which is《猫》. A possible location
+    for an English translation would be academic anthologies of modern Chinese
+    prose or textbook companion materials, as《猫》is a standard text in Chinese
+    primary school curricula (人教版四年级下册第13课).
