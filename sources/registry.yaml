@@ -131,3 +131,84 @@ sources:
     publisher: "意林杂志社"
     type: original
     notes: "Short inspirational stories and essays aimed at young readers."
+
+  # === Classic Prose (Extended) ===
+  - id: "src-016"
+    title_zh: "鲁迅散文集"
+    title_en: "Selected Essays of Lu Xun"
+    author: "鲁迅"
+    publisher: "人民文学出版社"
+    type: original
+    notes: "《从百草园到三味书屋》has vivid childhood scenes. Select accessible pieces — many are too advanced."
+
+  - id: "src-017"
+    title_zh: "巴金散文集"
+    title_en: "Selected Essays of Ba Jin"
+    author: "巴金"
+    publisher: "人民文学出版社"
+    type: original
+    notes: "《鸟的天堂》《繁星》are lyrical nature writing, staples of primary school textbooks."
+
+  - id: "src-018"
+    title_zh: "沈从文散文集"
+    title_en: "Selected Essays of Shen Congwen"
+    author: "沈从文"
+    publisher: "人民文学出版社"
+    type: original
+    notes: "Pastoral Xiangxi prose. Rich sensory detail and beautiful natural imagery."
+
+  - id: "src-019"
+    title_zh: "萧红散文集"
+    title_en: "Selected Essays of Xiao Hong"
+    author: "萧红"
+    publisher: "人民文学出版社"
+    type: original
+    notes: "《呼兰河传》childhood chapters are vivid and playful, written from a child's perspective."
+
+  - id: "src-020"
+    title_zh: "叶圣陶散文集"
+    title_en: "Selected Essays of Ye Shengtao"
+    author: "叶圣陶"
+    publisher: "人民文学出版社"
+    type: original
+    notes: "Pioneer of children's literature. 《稻草人》《爬山虎的脚》are primary school textbook staples."
+
+  - id: "src-021"
+    title_zh: "许地山散文集"
+    title_en: "Selected Essays of Xu Dishan"
+    author: "许地山"
+    publisher: "人民文学出版社"
+    type: original
+    notes: "《落花生》is a primary school classic — short, clear prose with a moral lesson."
+
+  - id: "src-022"
+    title_zh: "郑振铎散文集"
+    title_en: "Selected Essays of Zheng Zhenduo"
+    author: "郑振铎"
+    publisher: "人民文学出版社"
+    type: original
+    notes: "《燕子》《海燕》are beautiful nature prose with simple, vivid language."
+
+  - id: "src-023"
+    title_zh: "季羡林散文集"
+    title_en: "Selected Essays of Ji Xianlin"
+    author: "季羡林"
+    publisher: "人民文学出版社"
+    type: original
+    notes: "《夹竹桃》《自己的花是让别人看的》are contemplative textbook selections."
+
+  - id: "src-024"
+    title_zh: "杨朔散文集"
+    title_en: "Selected Essays of Yang Shuo"
+    author: "杨朔"
+    publisher: "人民文学出版社"
+    type: original
+    notes: "《荔枝蜜》is a classic of poetic prose style with vivid imagery."
+
+  - id: "src-025"
+    title_zh: "梁实秋散文集"
+    title_en: "Selected Essays of Liang Shiqiu"
+    author: "梁实秋"
+    publisher: "人民文学出版社"
+    type: original
+    notes: "《雅舍小品》— witty everyday observations, short and accessible."

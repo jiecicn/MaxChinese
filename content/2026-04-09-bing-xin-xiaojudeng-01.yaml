@@ -1,0 +1,67 @@
+id: "2026-04-09-bing-xin-xiaojudeng-01"
+title: "小桔灯 (节选)"
+author: "冰心"
+source:
+  book: "冰心散文集"
+  publisher: "人民文学出版社"
+  edition: "1978年版"
+  page: null
+  source_type: registry
+  registry_entry_id: "src-003"
+
+content_zh: |
+  我提着这灵巧的小桔灯，慢慢地在黑暗潮湿的山路上走着。这朦胧的桔红的光，实在照不了多远，但这小姑娘的镇定、勇敢、乐观的精神鼓舞了我，我似乎觉得眼前有无限光明！
+
+content_en:
+  text: null
+  translator: "Gong Shifen"
+  publisher: "Renditions (Chinese University of Hong Kong)"
+  reference_pointer: "See Renditions No. 32, Autumn 1989, pp. 130-132"
+
+expression_patterns:
+  - technique_id: "emotion-through-object"
+    example: "这灵巧的小桔灯...我似乎觉得眼前有无限光明"
+    explanation_zh: "通过描写小桔灯来表达对小姑娘勇敢精神的感动，以小见大"
+    explanation_en: "Using the small orange lamp to express admiration for the girl's courage — a small object reveals a big feeling"
+    practice_prompt_zh: "选一样你身边的小东西，用它来表达一种感情"
+    practice_prompt_en: "Pick a small object near you and use it to express a feeling"
+  - technique_id: "sensory-detail"
+    example: "黑暗潮湿的山路...朦胧的桔红的光"
+    explanation_zh: "用视觉和触觉的细节描写，让读者仿佛身临其境"
+    explanation_en: "Using visual and tactile details — dark, damp path and hazy orange light — to put the reader in the scene"
+    practice_prompt_zh: "描述一个你去过的地方，用至少两种感官来写"
+    practice_prompt_en: "Describe a place you've been using at least two senses"
+  - technique_id: "contrast-transition"
+    example: "实在照不了多远，但...眼前有无限光明"
+    explanation_zh: "先说灯光照不远，再话锋一转，说感受到无限光明——小与大形成强烈反差"
+    explanation_en: "First admitting the light doesn't reach far, then turning to say she felt infinite brightness — a powerful contrast between small and large"
+    practice_prompt_zh: "用'虽然……但是……'写一个转折句，表达意想不到的感受"
+    practice_prompt_en: "Write a turning-point sentence using 'although... but...' to express an unexpected feeling"
+
+tags:
+  difficulty: 2
+  themes:
+    - "勇气"
+    - "希望"
+  length: short
+  genre: prose
+
+verification:
+  status: verified
+  verified_date: "2026-04-09"
+  method: "web_search + source_match"
+  notes: "Verbatim match confirmed from closing paragraph of 冰心《小桔灯》, first published 1957"
+  technique_verification:
+    - technique_id: "emotion-through-object"
+      verdict: kept
+      note: "Textbook example of 借物抒情 — lamp symbolizes hope and courage"
+    - technique_id: "sensory-detail"
+      verdict: kept
+      note: "Visual and tactile details clearly present"
+    - technique_id: "contrast-transition"
+      verdict: kept
+      note: "Classic 但 pivot from physical limitation to spiritual transcendence"
+
+assignment:
+  date: null
+  queue_position: 2
