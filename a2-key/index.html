@@ -350,7 +350,7 @@ els.reset.addEventListener("click",async()=>{
   await clearAllDrawings();els.dialog.close();persist();render();
 });
 
-let cloudReady=false,cloudSaveTimer,cloudSaving=false,cloudQueued=false;
+let cloudReady=false,cloudSaveTimer,cloudSaving=false,cloudQueued=false,lastSyncStatus="off";
 function cloudConfig(){
   return {
     gistId:safeGetItem(GIST_ID_KEY)||safeGetItem("maxchinese_gist_id")||DEFAULT_GIST_ID,
@@ -364,7 +364,8 @@ function gistHeaders(){
   return {"Authorization":`Bearer ${cloudConfig().token}`,"Accept":"application/vnd.github+json","Content-Type":"application/json"};
 }
 function setSyncStatus(status,message=""){
-  const labels={off:"Sync: off",ready:"Sync",loading:"Syncing…",saved:"Synced",saving:"Saving…",error:"Sync error"};
+  const labels={off:"Sync: off",setup:"Sync setup",ready:"Sync",loading:"Syncing…",saved:"Synced",saving:"Saving…",error:"Sync error"};
+  lastSyncStatus=status;
   els.sync.textContent=labels[status]||"Sync";
   els.syncMessage.className=`feedback ${status==="error"?"bad":status==="saved"?"good":""}`.trim();
   els.syncMessage.textContent=message;
@@ -416,7 +417,7 @@ function scheduleCloudSave(){
   if(!cloudReady||!isCloudConfigured())return;
   clearTimeout(cloudSaveTimer);cloudSaveTimer=setTimeout(saveCloudState,1200);
 }
-async function syncFromCloud(closeWhenDone=false){
+async function syncFromCloud(closeWhenDone=false,automatic=false){
   if(!isCloudConfigured()){cloudReady=false;setSyncStatus("off","Enter a Gist ID and token.");return}
   setSyncStatus("loading","Loading progress from Gist…");
   try{
@@ -433,12 +434,15 @@ async function syncFromCloud(closeWhenDone=false){
     if(closeWhenDone)els.syncDialog.close();
   }catch(error){
     cloudReady=false;console.error("Gist load failed",error);
-    setSyncStatus("error",`Could not load progress: ${error.message}`);
+    const message=`Could not load progress: ${error.message}. Enter a current Gist ID and token.`;
+    setSyncStatus(automatic?"setup":"error",message);
   }
 }
 els.sync.addEventListener("click",()=>{
   const config=cloudConfig();els.gist.value=config.gistId;els.token.value=config.token;
-  setSyncStatus(isCloudConfigured()?"ready":"off",isCloudConfigured()?"Save to sync again or change the settings.":"Enter the parent setup details.");
+  if(lastSyncStatus!=="error"&&lastSyncStatus!=="setup"){
+    setSyncStatus(isCloudConfigured()?"ready":"off",isCloudConfigured()?"Save to sync again or change the settings.":"Enter the parent setup details.");
+  }
   els.syncDialog.showModal();
 });
 els.closeSync.addEventListener("click",()=>els.syncDialog.close());
@@ -543,7 +547,7 @@ render();
 if("serviceWorker" in navigator&&location.protocol.startsWith("http")){
   navigator.serviceWorker.register("service-worker.js").catch(error=>console.error("Service worker registration failed",error));
 }
-if(isCloudConfigured())syncFromCloud();
+if(isCloudConfigured())syncFromCloud(false,true);
 else setSyncStatus("off");
 </script>
 </body>

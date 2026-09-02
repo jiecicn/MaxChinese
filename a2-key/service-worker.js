@@ -1,4 +1,4 @@
-const CACHE_NAME = 'a2-key-pad-v2';
+const CACHE_NAME = 'a2-key-pad-v3';
 const ASSETS = [
   './',
   './index.html',
