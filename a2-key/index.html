@@ -126,12 +126,12 @@ button:focus-visible,input:focus-visible{outline:3px solid color-mix(in srgb,var
 
     <section class="scramble" aria-labelledby="scrambleHeading">
       <p id="scrambleHeading">Unscramble these letters</p>
-      <div class="letters" id="letters"></div>
+      <div class="letters" id="letters">Loading…</div>
     </section>
 
     <section class="section" aria-labelledby="cluesHeading">
       <h2 id="cluesHeading">Clues</h2>
-      <ul class="clues" id="clues"></ul>
+      <ul class="clues" id="clues"><li>Preparing the first question…</li></ul>
     </section>
 
     <section class="section" aria-labelledby="examplesHeading">
@@ -213,6 +213,19 @@ const GIST_TOKEN_KEY="a2-key-pad:gist-token";
 const PROGRESS_FILENAME="a2-key-progress.json";
 const DEFAULT_GIST_ID="";
 const $=id=>document.getElementById(id);
+const memoryStore={};
+function safeGetItem(key){
+  try{const value=localStorage.getItem(key);if(value!==null)return value}catch(error){console.warn("Browser storage unavailable",error)}
+  return Object.prototype.hasOwnProperty.call(memoryStore,key)?memoryStore[key]:null;
+}
+function safeSetItem(key,value){
+  memoryStore[key]=value;
+  try{localStorage.setItem(key,value)}catch(error){console.warn("Browser storage unavailable",error)}
+}
+function safeRemoveItem(key){
+  delete memoryStore[key];
+  try{localStorage.removeItem(key)}catch(error){console.warn("Browser storage unavailable",error)}
+}
 const els={
   position:$("positionLabel"),progress:$("progressFill"),score:$("scoreLabel"),word:$("wordLabel"),
   star:$("starBtn"),letters:$("letters"),clues:$("clues"),examples:$("examples"),answer:$("answerInput"),
@@ -223,9 +236,19 @@ const els={
   sync:$("syncBtn"),syncDialog:$("syncDialog"),gist:$("gistInput"),token:$("tokenInput"),
   syncMessage:$("syncMessage"),saveSync:$("saveSyncBtn"),closeSync:$("closeSyncBtn")
 };
+addEventListener("error",event=>{
+  console.error("App startup failed",event.error||event.message);
+  if(els.letters.textContent==="Loading…"){
+    els.letters.textContent="Could not start";
+    els.clues.replaceChildren();
+    const item=document.createElement("li");
+    item.textContent="Reload the page. If this continues, browser storage may be blocked.";
+    els.clues.append(item);
+  }
+});
 function restoreState(){
   try{
-    const saved=JSON.parse(localStorage.getItem(STATE_KEY));
+    const saved=JSON.parse(safeGetItem(STATE_KEY));
     return saved&&typeof saved==="object"?{index:0,answers:{},results:{},starred:{},updatedAt:"",...saved}:{index:0,answers:{},results:{},starred:{},updatedAt:""};
   }catch{return {index:0,answers:{},results:{},starred:{},updatedAt:""}}
 }
@@ -236,7 +259,7 @@ function persist(){
   state.updatedAt=new Date().toISOString();
   clearTimeout(saveTimer);
   saveTimer=setTimeout(()=>{
-    localStorage.setItem(STATE_KEY,JSON.stringify(state));
+    safeSetItem(STATE_KEY,JSON.stringify(state));
     scheduleCloudSave();
   },100);
 }
@@ -313,25 +336,25 @@ els.star.addEventListener("click",()=>{
   const key=String(state.index);if(state.starred[key])delete state.starred[key];else state.starred[key]=true;persist();render();
 });
 
-const root=document.documentElement,savedTheme=localStorage.getItem(THEME_KEY);
+const root=document.documentElement,savedTheme=safeGetItem(THEME_KEY);
 if(savedTheme)root.dataset.theme=savedTheme;
 else if(matchMedia("(prefers-color-scheme: dark)").matches)root.dataset.theme="dark";
 els.theme.addEventListener("click",()=>{
-  root.dataset.theme=root.dataset.theme==="dark"?"light":"dark";localStorage.setItem(THEME_KEY,root.dataset.theme);
+  root.dataset.theme=root.dataset.theme==="dark"?"light":"dark";safeSetItem(THEME_KEY,root.dataset.theme);
 });
 els.stats.addEventListener("click",()=>{updateProgress();els.dialog.showModal()});
 els.closeStats.addEventListener("click",()=>els.dialog.close());
 els.reset.addEventListener("click",async()=>{
   if(!confirm("Reset all typed answers, scores, stars, and handwriting?"))return;
-  localStorage.removeItem(STATE_KEY);state={index:0,answers:{},results:{},starred:{},updatedAt:new Date().toISOString()};
+  safeRemoveItem(STATE_KEY);state={index:0,answers:{},results:{},starred:{},updatedAt:new Date().toISOString()};
   await clearAllDrawings();els.dialog.close();persist();render();
 });
 
 let cloudReady=false,cloudSaveTimer,cloudSaving=false,cloudQueued=false;
 function cloudConfig(){
   return {
-    gistId:localStorage.getItem(GIST_ID_KEY)||localStorage.getItem("maxchinese_gist_id")||DEFAULT_GIST_ID,
-    token:localStorage.getItem(GIST_TOKEN_KEY)||localStorage.getItem("maxchinese_gist_token")||""
+    gistId:safeGetItem(GIST_ID_KEY)||safeGetItem("maxchinese_gist_id")||DEFAULT_GIST_ID,
+    token:safeGetItem(GIST_TOKEN_KEY)||safeGetItem("maxchinese_gist_token")||""
   };
 }
 function isCloudConfigured(){
@@ -402,7 +425,7 @@ async function syncFromCloud(closeWhenDone=false){
     if(remote&&String(remote.updatedAt||"")>String(state.updatedAt||"")){
       state={index:0,answers:{},results:{},starred:{},updatedAt:"",...remote};
       state.index=Math.max(0,Math.min(WORDS.length-1,Number(state.index)||0));
-      localStorage.setItem(STATE_KEY,JSON.stringify(state));render();
+      safeSetItem(STATE_KEY,JSON.stringify(state));render();
     }
     cloudReady=true;
     if(!remote||String(state.updatedAt||"")>String(remote.updatedAt||""))await saveCloudState();
@@ -422,7 +445,7 @@ els.closeSync.addEventListener("click",()=>els.syncDialog.close());
 els.saveSync.addEventListener("click",async()=>{
   const gistId=els.gist.value.trim(),token=els.token.value.trim();
   if(!gistId||!token){setSyncStatus("error","Both fields are required.");return}
-  localStorage.setItem(GIST_ID_KEY,gistId);localStorage.setItem(GIST_TOKEN_KEY,token);
+  safeSetItem(GIST_ID_KEY,gistId);safeSetItem(GIST_TOKEN_KEY,token);
   await syncFromCloud(true);
 });
 
@@ -513,7 +536,7 @@ async function loadDrawing(key){
 }
 let resizeTimer;
 addEventListener("resize",()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(sizeCanvas,150)});
-addEventListener("pagehide",()=>{saveDrawing(String(state.index));localStorage.setItem(STATE_KEY,JSON.stringify(state))});
+addEventListener("pagehide",()=>{saveDrawing(String(state.index));safeSetItem(STATE_KEY,JSON.stringify(state))});
 document.addEventListener("visibilitychange",()=>{if(document.hidden)saveDrawing(String(state.index))});
 
 render();
@@ -521,13 +544,7 @@ if("serviceWorker" in navigator&&location.protocol.startsWith("http")){
   navigator.serviceWorker.register("service-worker.js").catch(error=>console.error("Service worker registration failed",error));
 }
 if(isCloudConfigured())syncFromCloud();
-else{
-  setSyncStatus("off");
-  setTimeout(()=>{
-    const config=cloudConfig();els.gist.value=config.gistId;els.token.value="";
-    setSyncStatus("off","Enter the parent setup details once on this iPad.");els.syncDialog.showModal();
-  },250);
-}
+else setSyncStatus("off");
 </script>
 </body>
 </html>
