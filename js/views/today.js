@@ -104,6 +104,14 @@ function renderPiece(piece, techniqueMap, lang) {
       ${piece.expression_patterns && piece.expression_patterns.length > 0 ? `
         <div class="patterns-section">
           <div class="patterns-title">${lang === 'zh' ? '表达技巧' : 'Expression Patterns'}</div>
+          <div class="daily-writing-prompt">
+            <span data-lang-field="zh" class="${lang !== 'zh' ? 'hidden' : ''}">
+              今日仿写：从下面任选一个好词、好句式或修辞，在纸上仿写一句。
+            </span>
+            <span data-lang-field="en" class="${lang !== 'en' ? 'hidden' : ''}">
+              Daily writing: choose one useful phrase, sentence pattern, or technique below and write one sentence on paper.
+            </span>
+          </div>
           ${piece.expression_patterns.map(p => renderPattern(p, techniqueMap, lang)).join('')}
         </div>
       ` : ''}
