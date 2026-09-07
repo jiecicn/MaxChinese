@@ -1,9 +1,10 @@
 import { getTodayPieces } from '../data.js';
-import { loadProgress, markFinished, markSkipped, markChanged } from '../progress.js';
+import { getSyncError, loadProgress, markFinished, markSkipped, markChanged } from '../progress.js';
 import { getCurrentLang, renderLanguageToggle } from '../components/language-toggle.js';
 
 export async function renderToday(container, data) {
   const progress = await loadProgress();
+  const syncError = getSyncError();
   const pieces = getTodayPieces(data, progress);
   const today = new Date();
   const dateStr = today.toLocaleDateString('en-US', {
@@ -28,6 +29,7 @@ export async function renderToday(container, data) {
   container.innerHTML = `
     <div class="greeting">Max, the Best!</div>
     <div class="today-date">${dateStr}</div>
+    ${syncError ? renderSyncWarning(syncError) : ''}
     <div id="lang-toggle-container"></div>
     ${pieces.map(piece => renderPiece(piece, data.techniqueMap, lang)).join('')}
   `;
@@ -75,6 +77,15 @@ export async function renderToday(container, data) {
       renderToday(container, data);
     });
   });
+}
+
+function renderSyncWarning(error) {
+  return `
+    <div class="sync-warning">
+      Progress is saved on this device but is not syncing to Gist (${escapeHtml(error)}).
+      <a href="#setup">Fix sync setup</a>
+    </div>
+  `;
 }
 
 function renderPiece(piece, techniqueMap, lang) {

@@ -1,7 +1,8 @@
-import { loadProgress, getStreak } from '../progress.js';
+import { getSyncError, loadProgress, getStreak } from '../progress.js';
 
 export async function renderHistory(container, data) {
   const progress = await loadProgress();
+  const syncError = getSyncError();
   const streak = getStreak(progress);
 
   const completed = progress.items
@@ -14,6 +15,12 @@ export async function renderHistory(container, data) {
   }
 
   container.innerHTML = `
+    ${syncError ? `
+      <div class="sync-warning">
+        Showing device-cached progress; Gist sync failed (${escapeHtml(syncError)}).
+        <a href="#setup">Fix sync setup</a>
+      </div>
+    ` : ''}
     <div class="streak-banner">
       <div class="streak-count">${streak}</div>
       <div class="streak-label">day streak</div>

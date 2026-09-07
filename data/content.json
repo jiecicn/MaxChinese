@@ -703,7 +703,7 @@
     },
     "assignment": {
       "date": null,
-      "queue_position": 14
+      "queue_position": null
     }
   },
   {
@@ -765,7 +765,7 @@
     },
     "assignment": {
       "date": null,
-      "queue_position": 15
+      "queue_position": null
     }
   },
   {
@@ -826,7 +826,7 @@
     },
     "assignment": {
       "date": null,
-      "queue_position": 13
+      "queue_position": null
     }
   },
   {
@@ -888,7 +888,7 @@
     },
     "assignment": {
       "date": null,
-      "queue_position": 17
+      "queue_position": null
     }
   },
   {
@@ -949,7 +949,7 @@
     },
     "assignment": {
       "date": null,
-      "queue_position": 16
+      "queue_position": null
     }
   },
   {
@@ -1010,7 +1010,7 @@
     },
     "assignment": {
       "date": null,
-      "queue_position": 12
+      "queue_position": null
     }
   },
   {
@@ -1072,7 +1072,7 @@
     },
     "assignment": {
       "date": null,
-      "queue_position": 18
+      "queue_position": null
     }
   }
 ]

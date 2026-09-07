@@ -1,1 +1,1 @@
-window.MAXCHINESE_CONFIG = {"gist_id": "13304023"};
+window.MAXCHINESE_CONFIG = {"gist_id": ""};

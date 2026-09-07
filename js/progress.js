@@ -13,8 +13,10 @@
  */
 
 const PROGRESS_FILENAME = 'progress.json';
+const LOCAL_PROGRESS_KEY = 'maxchinese_progress_cache';
 
 let cachedProgress = null;
+let lastSyncError = null;
 
 // In-memory fallback when localStorage is unavailable (private browsing)
 const memoryStore = {};
@@ -36,7 +38,7 @@ function getConfig() {
   // Gist ID from build-time config, token from localStorage/memory (entered once by parent)
   const buildConfig = window.MAXCHINESE_CONFIG || {};
   return {
-    gist_id: buildConfig.gist_id || safeGetItem('maxchinese_gist_id') || '',
+    gist_id: safeGetItem('maxchinese_gist_id') || buildConfig.gist_id || '',
     token: safeGetItem('maxchinese_gist_token') || '',
   };
 }
@@ -49,6 +51,8 @@ export function isConfigured() {
 export function saveSetup(gistId, token) {
   safeSetItem('maxchinese_gist_id', gistId);
   safeSetItem('maxchinese_gist_token', token);
+  cachedProgress = null;
+  lastSyncError = null;
 }
 
 function headers() {
@@ -64,12 +68,28 @@ function defaultProgress() {
   return { usage_days: 0, last_usage_date: null, items: [] };
 }
 
+function loadLocalProgress() {
+  try {
+    return JSON.parse(safeGetItem(LOCAL_PROGRESS_KEY)) || defaultProgress();
+  } catch (e) {
+    return defaultProgress();
+  }
+}
+
+function saveLocalProgress(progress) {
+  safeSetItem(LOCAL_PROGRESS_KEY, JSON.stringify(progress));
+}
+
+export function getSyncError() {
+  return lastSyncError;
+}
+
 export async function loadProgress() {
   if (cachedProgress) return cachedProgress;
 
   const config = getConfig();
   if (!config.gist_id || !config.token) {
-    cachedProgress = defaultProgress();
+    cachedProgress = loadLocalProgress();
     return cachedProgress;
   }
 
@@ -84,21 +104,26 @@ export async function loadProgress() {
     if (!res.ok) throw new Error(`Gist fetch failed: ${res.status}`);
     const gist = await res.json();
     const file = gist.files[PROGRESS_FILENAME];
-    cachedProgress = file ? JSON.parse(file.content) : defaultProgress();
+    cachedProgress = file ? JSON.parse(file.content) : loadLocalProgress();
+    saveLocalProgress(cachedProgress);
+    lastSyncError = null;
   } catch (e) {
     console.error('Failed to load progress:', e);
-    cachedProgress = defaultProgress();
+    lastSyncError = e.message;
+    cachedProgress = loadLocalProgress();
   }
   return cachedProgress;
 }
 
 async function saveProgress(progress) {
+  cachedProgress = progress;
+  saveLocalProgress(progress);
+
   const config = getConfig();
   if (!config.gist_id || !config.token) return;
 
-  cachedProgress = progress;
   try {
-    await fetch(`https://api.github.com/gists/${config.gist_id}`, {
+    const res = await fetch(`https://api.github.com/gists/${config.gist_id}`, {
       method: 'PATCH',
       headers: headers(),
       body: JSON.stringify({
@@ -109,8 +134,11 @@ async function saveProgress(progress) {
         },
       }),
     });
+    if (!res.ok) throw new Error(`Gist save failed: ${res.status}`);
+    lastSyncError = null;
   } catch (e) {
     console.error('Failed to save progress:', e);
+    lastSyncError = e.message;
   }
 }
 
