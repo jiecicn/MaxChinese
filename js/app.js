@@ -1,5 +1,5 @@
 import { loadData } from './data.js';
-import { isConfigured, saveSetup } from './progress.js';
+import { createProgressGist, isConfigured, saveSetup } from './progress.js';
 import { renderToday } from './views/today.js';
 import { renderHistory } from './views/history.js';
 import { renderTechniques, renderTechniqueDetail } from './views/techniques.js';
@@ -78,16 +78,43 @@ function renderSetup(container) {
         <input id="setup-gist-id" type="text" style="width:100%;padding:10px;border:1px solid #e5e2dd;border-radius:8px;font-size:1rem;margin-bottom:12px" placeholder="e.g. abc123def456">
         <label style="display:block;font-size:0.9rem;color:#666;margin-bottom:4px">Token</label>
         <input id="setup-token" type="password" style="width:100%;padding:10px;border:1px solid #e5e2dd;border-radius:8px;font-size:1rem;margin-bottom:16px" placeholder="github_pat_...">
+        <div id="setup-status" class="setup-status" role="status"></div>
         <button id="setup-save" class="btn-finish" style="width:100%">Save</button>
+        <button id="setup-create" class="btn-change" style="width:100%;margin-top:8px">Create new progress Gist</button>
       </div>
     </div>
   `;
+  const status = document.getElementById('setup-status');
   document.getElementById('setup-save').addEventListener('click', () => {
     const gistId = document.getElementById('setup-gist-id').value.trim();
     const token = document.getElementById('setup-token').value.trim();
     if (gistId && token) {
       saveSetup(gistId, token);
       window.location.hash = 'today';
+    } else {
+      status.textContent = 'Enter both the Gist ID and token.';
+    }
+  });
+  document.getElementById('setup-create').addEventListener('click', async event => {
+    const token = document.getElementById('setup-token').value.trim();
+    if (!token) {
+      status.textContent = 'Enter the token first.';
+      return;
+    }
+
+    const button = event.currentTarget;
+    button.disabled = true;
+    button.textContent = 'Creating...';
+    status.textContent = '';
+    try {
+      const gistId = await createProgressGist(token);
+      document.getElementById('setup-gist-id').value = gistId;
+      status.textContent = 'Progress Gist created. Opening today’s reading...';
+      window.location.hash = 'today';
+    } catch (error) {
+      status.textContent = error.message;
+      button.disabled = false;
+      button.textContent = 'Create new progress Gist';
     }
   });
 }

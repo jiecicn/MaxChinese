@@ -57,8 +57,12 @@ export function saveSetup(gistId, token) {
 
 function headers() {
   const config = getConfig();
+  return headersForToken(config.token);
+}
+
+function headersForToken(token) {
   return {
-    'Authorization': `token ${config.token}`,
+    'Authorization': `token ${token}`,
     'Accept': 'application/vnd.github.v3+json',
     'Content-Type': 'application/json',
   };
@@ -82,6 +86,32 @@ function saveLocalProgress(progress) {
 
 export function getSyncError() {
   return lastSyncError;
+}
+
+export async function createProgressGist(token) {
+  const progress = cachedProgress || loadLocalProgress();
+  const res = await fetch('https://api.github.com/gists', {
+    method: 'POST',
+    headers: headersForToken(token),
+    body: JSON.stringify({
+      description: 'MaxChinese reading progress',
+      public: false,
+      files: {
+        [PROGRESS_FILENAME]: {
+          content: JSON.stringify(progress, null, 2),
+        },
+      },
+    }),
+  });
+  if (!res.ok) throw new Error(`Gist creation failed: ${res.status}`);
+
+  const gist = await res.json();
+  if (!gist.id) throw new Error('GitHub did not return a Gist ID');
+
+  saveSetup(gist.id, token);
+  cachedProgress = progress;
+  saveLocalProgress(progress);
+  return gist.id;
 }
 
 export async function loadProgress() {

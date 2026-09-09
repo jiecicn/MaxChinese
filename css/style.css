@@ -170,6 +170,13 @@ body {
   font-weight: 600;
 }
 
+.setup-status {
+  min-height: 24px;
+  margin-bottom: 8px;
+  color: #a33b2b;
+  font-size: 0.9rem;
+}
+
 .pattern-card {
   background: #f5f5f0;
   border-radius: 8px;
